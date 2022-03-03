@@ -1,12 +1,15 @@
 module.exports = {
   content: [
-    "./src/**/*.html",
-    "./src/**/*.vue",
-    "./src/components/**/*.vue",
-    "./src/view/**/*.vue",
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'logo-dark-blue': '#19022d',
+        'logo-light-blue': '#0498f4',
+      }
+    },
   },
   plugins: [],
 };

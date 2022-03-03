@@ -1,8 +1,195 @@
 <script setup lang="ts">
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import { inject } from "vue";
+
+const trans: Function = inject("trans");
 </script>
 <template>
   <Header />
+  <main>
+    <!-- quien soy -->
+    <section class="text-gray-600 border flex items-center justify-center">
+      <div class="container px-5 py-40 mx-auto">
+        <div class="flex flex-wrap w-full">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-4xl text-3xl font-medium title-font mb-2 text-logo-dark-blue inline-flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-open-source"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#19022d"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 3a9 9 0 0 1 3.618 17.243l-2.193 -5.602a3 3 0 1 0 -2.849 0l-2.193 5.603a9 9 0 0 1 3.617 -17.244z"
+                />
+              </svg>
+              {{ trans("fullName") }}
+            </h1>
+            <div class="h-1 w-40 bg-logo-light-blue rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 text-justify">
+            {{ trans("aboutMe") }}
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /quien soy -->
+
+    <!-- habilidades -->
+    <section class="text-gray-600 bg-gray-50">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-10">
+          <h2 class="text-xs text-logo-light-blue tracking-widest font-medium title-font mb-1">
+            {{ trans('allExperience') }}
+          </h2>
+          <h2 class="sm:text-3xl text-2xl font-medium title-font text-logo-dark-blue">
+            {{ trans('skills') }}
+          </h2>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="p-4 md:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-logo-light-blue text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-medium">Shooting Stars</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-logo-light-blue text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-medium">The Catalyzer</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/3">
+            <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+              <div class="flex items-center mb-3">
+                <div
+                  class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-logo-light-blue text-white flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                  </svg>
+                </div>
+                <h2 class="text-gray-900 text-lg title-font font-medium">Neptune</h2>
+              </div>
+              <div class="flex-grow">
+                <p class="leading-relaxed text-base">
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy.
+                  Gastropub indxgo juice poutine.
+                </p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /habilidades -->
+  </main>
   <Footer />
 </template>
