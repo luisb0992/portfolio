@@ -24,7 +24,7 @@ const data: Ref = ref([]);
 // -------------------------------
 // import dinámico
 // -------------------------------
-data.value = await import(`./${lang.lang}/app`);
+data.value = await import(/* @vite-ignore */ `./${lang.lang}/app`);
 
 /**
  * Buscar una palabra en el idioma actual de la app
