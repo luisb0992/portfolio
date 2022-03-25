@@ -6,7 +6,9 @@ module.exports = {
     extend: {
       colors: {
         "logo-dark-blue": "#19022d",
+        "logo-dark-blue-500": "#002864",
         "logo-light-blue": "#0498f4",
+        "logo-light-blue-500": "#5b7dcf",
       },
       keyframes: {
         "fade-in-down": {

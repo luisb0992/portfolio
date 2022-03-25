@@ -70,6 +70,9 @@ const data:{} = {
   orm: "ORM",
   transaction: "Transacciones",
   indexdb: "IndexDB",
+  visitar: "Visitar",
+  visitarSitio: "Visitar sitio",
+  visitarRepo: "Visitar respositorio",
 };
 
 export default data;

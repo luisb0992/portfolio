@@ -12,7 +12,7 @@ const API = reactive({
   // The Real-time Firebase database
   RTDB: {
 
-    // URL.
+    // endpoint
     url: import.meta.env.VITE_DB_URL
   }
 });
