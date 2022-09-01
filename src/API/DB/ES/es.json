@@ -9,7 +9,7 @@
         "repo": null,
         "year": "2018",
         "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
+          { "category": "laravel", "clase": "danger" },
           { "category": "Vuejs", "clase": "success" },
           { "category": "JQuery", "clase": "info" },
           { "category": "API", "clase": "success" }

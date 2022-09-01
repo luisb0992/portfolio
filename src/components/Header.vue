@@ -1,8 +1,20 @@
 <script setup lang="ts">
-import { inject } from "vue";
+import { inject, Ref, ref } from "vue";
 import Logo from "/src/components/Logo.vue";
+import { lang } from "./../lang/config";
 
-const trans: Function = inject("trans");
+const trans = inject("trans");
+const es: Ref = ref(true);
+
+const changeLanguaje: Function = () => {
+  if (es.value) {
+    es.value = false;
+    return (lang.lang = "us");
+  }
+
+  es.value = true;
+  lang.lang = "es";
+};
 </script>
 
 <template>
@@ -19,7 +31,22 @@ const trans: Function = inject("trans");
       >
         <Logo classes="w-20 h-20" src="/src/assets/Img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp" />
       </a>
-      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0"></div>
+      <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 text-base mt-4 md:mt-0"
+          :class="es ? 'bg-logo-dark-blue text-white hover:bg-gray-700' : ''"
+          @click="changeLanguaje()"
+        >
+          <span> {{ trans("spanish") }} </span>
+        </button>
+        <button
+          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 text-base mt-4 md:mt-0"
+          :class="!es ? 'bg-logo-dark-blue text-white hover:bg-gray-700' : ''"
+          @click="changeLanguaje()"
+        >
+          <span> {{ trans("english") }} </span>
+        </button>
+      </div>
     </div>
   </header>
 </template>

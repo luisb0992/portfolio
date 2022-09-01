@@ -23,7 +23,7 @@ module.exports = {
         },
       },
       animation: {
-        "fade-in-down": "fade-in-down 0.5s ease-out",
+        "fade-in-down": "fade-in-down 0.6s ease-in",
       },
       fontFamily: {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],

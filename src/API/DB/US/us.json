@@ -1,10 +1,10 @@
 {
   "us": {
-    "proyects": [
+    "projects": [
       {
         "name": "Perulinks",
-        "description": "Desarrollo de una aplicación web para la gestión de perulinks, una herramienta que permite el streaming de películas y series, asi como la gestión de los mismos.",
-        "image": "img/projects/perulink.webp",
+        "description": "Development of a web application for the management of perulinks, a tool that allows the streaming of movies and series, as well as their management.",
+        "image": "perulink.webp",
         "url": "http://perulinks.com/",
         "repo": null,
         "year": "2018",
@@ -17,9 +17,9 @@
         "tags": ["Streaming", "Movies", "TV shows", "Management"]
       },
       {
-        "name": "Coches Bebes",
-        "description": "Desarrollo de una aplicación web para la gestión de los coches de los bebes, lleva el control de las ventas e inventario de artículos.",
-        "image": "img/projects/coches_bebe.webp",
+        "name": "Baby Cars",
+        "description": "Development of a web application to manage baby strollers, keep track of sales and inventory of items.",
+        "image": "coches_bebe.webp",
         "url": "http://panel.littlebru.com/",
         "repo": "https://github.com/luisb0992/inventariocb",
         "year": "2017",
@@ -31,8 +31,8 @@
       },
       {
         "name": "Savo Rental",
-        "description": "Desarrollo de una aplicación web para la gestión de los vehículos de la empresa Savo Rental, lleva el control de alquiler de vehículos distribuidos en diferentes empresas y sucursales.",
-        "image": "img/projects/savo.webp",
+        "description": "Development of a web application for the management of the vehicles of the Savo Rental company, which controls the rental of vehicles distributed in different companies and branches.",
+        "image": "savo.webp",
         "url": "http://savo.savorent.com/",
         "repo": "https://github.com/luisb0992/savo",
         "year": "2020",
@@ -43,9 +43,9 @@
         "tags": ["Vehicles", "Rental", "Management", "Multi-currency", "branch office"]
       },
       {
-        "name": "Planificacion de actividades",
-        "description": "Desarrollo de una aplicación web para la gestión de las actividades de la empresa KCV, lleva el control de las actividades de la empresa y de los empleados, asignación de tareas y reportes.",
-        "image": "img/projects/actividades.webp",
+        "name": "Activity planning",
+        "description": "Development of a web application for the management of the activities of the KCV company, it keeps track of the activities of the company and of the employees, assignment of tasks and reports.",
+        "image": "actividades.webp",
         "url": null,
         "repo": "https://gitlab.com/CaciqueDev/actividades",
         "year": "2019",
@@ -57,9 +57,9 @@
         "tags": ["Activities", "Management", "Assignment", "Reports", "Personal"]
       },
       {
-        "name": "Control y Seguimiento de planta",
-        "description": "Desarrollo de una aplicación web para la gestión de la producción de las plantas en la empresa KCV, lleva el control de materia prima, asi como empaquetamiento y distribución.",
-        "image": "img/projects/cys.webp",
+        "name": "Plant control and monitoring",
+        "description": "Development of a web application for the management of the production of the plants in the KCV company, it controls the raw material, as well as packaging and distribution.",
+        "image": "cys.webp",
         "url": null,
         "repo": "https://gitlab.com/CaciqueDev/syc",
         "year": "2018",
@@ -71,9 +71,9 @@
         "tags": ["Production", "Management", "Packaging", "Distribution", "Raw materials"]
       },
       {
-        "name": "Acceso de Personal KCV",
-        "description": "Desarrollo de una aplicación web para la gestión de los accesos de personal a la empresa KCV, lleva el control de los accesos de personal y de los empleados, implementa un código QR a distintas áreas de la planta.",
-        "image": "img/projects/cys.webp",
+        "name": "Staff Access KCV",
+        "description": "Development of a web application for the management of personnel access to the company KCV, it controls the access of personnel and employees, implements a QR code to different areas of the plant.",
+        "image": "qr.webp",
         "url": null,
         "repo": "https://gitlab.com/CaciqueDev/Acceso",
         "year": "2017",
@@ -85,9 +85,9 @@
         "tags": ["Access", "Management", "QR code", "Personal"]
       },
       {
-        "name": "Academia Rusa",
-        "description": "Aplicación web que provee información de las universidades en Rusia, ajustando precios y horarios de los cursos.",
-        "image": "img/projects/academia_rusa.webp",
+        "name": "Russian Academy",
+        "description": "Web application that provides information on universities in Russia, adjusting prices and course schedules.",
+        "image": "academia_rusa.webp",
         "url": "https://academiarusa.com/",
         "repo": null,
         "year": "2019",
@@ -100,8 +100,8 @@
       },
       {
         "name": "Teraminer C.A",
-        "description": "Empresa Fintech Venezolana dedicada al uso de la tecnología blockchain en procesos comerciales, financieros e industriales. Plataforma interactiva para la comercialización de equipos tecnológicos, multimedia, servicios y minería digital.",
-        "image": "img/projects/teraminer.webp",
+        "description": "Venezuelan Fintech company dedicated to the use of blockchain technology in commercial, financial and industrial processes. Interactive platform for the commercialization of technological equipment, multimedia, services and digital mining.",
+        "image": "teraminer.webp",
         "url": "https://teraminer.com.ve/",
         "repo": null,
         "year": "2020",
@@ -114,8 +114,8 @@
       },
       {
         "name": "Agropatria S.A",
-        "description": "Empresa dedicada a la comercialización de productos agrícolas, con el objetivo de generar una fuente de ingresos para el sector agrícola.",
-        "image": "img/projects/agropatria.webp",
+        "description": "Company dedicated to the commercialization of agricultural products, with the aim of generating a source of income for the agricultural sector.",
+        "image": "agropatria.webp",
         "url": null,
         "repo": "https://github.com/luisb0992/Agropatria",
         "year": "2016",
@@ -128,8 +128,8 @@
       },
       {
         "name": "TALS",
-        "description": "Aplicación web adaptativa que ayuda a los usuarios con discapacidad visual, a realizar actividades de aprendizaje y de apoyo a la vida diaria.",
-        "image": "img/projects/tals.webp",
+        "description": "Adaptive web application that helps visually impaired users to carry out learning and daily life support activities.",
+        "image": "tals.webp",
         "url": null,
         "repo": "https://github.com/luisb0992/tals",
         "year": "2018",
@@ -140,9 +140,9 @@
         "tags": ["Visual", "Learning", "Life"]
       },
       {
-        "name": "Inmuebles Peruanos",
-        "description": "Aplicación web que permite a los usuarios registrarse y comprar inmuebles en Perú, con el objetivo de generar una fuente de ingresos para el sector inmobiliario.",
-        "image": "img/projects/inmuebles_peru.webp",
+        "name": "Peru real estate",
+        "description": "Web application that allows users to register and buy real estate in Peru, with the aim of generating a source of income for the real estate sector.",
+        "image": "inmuebles_peru.webp",
         "url": "http://inmuebles.littlebru.com/",
         "repo": null,
         "year": "2016",
@@ -154,9 +154,9 @@
         "tags": ["Real estate", "Commerce", "Products"]
       },
       {
-        "name": "Distribuidora Génesis",
-        "description": "Aplicación web que permite a los usuarios registrarse y comprar productos de anteojos al mayor, con el objetivo de generar una fuente de ingresos para el sector de venta de productos de anteojos.",
-        "image": "img/projects/distribuidora_genesis.webp",
+        "name": "Génesis distributor",
+        "description": "Web application that allows users to register and buy wholesale eyewear products, with the aim of generating a source of income for the eyewear product sales sector.",
+        "image": "distribuidora_genesis.webp",
         "url": "http://distribuidoragenesis.net/",
         "repo": "https://github.com/luisb0992/DistribuidoraGenesis",
         "year": "2018",
@@ -169,8 +169,8 @@
       },
       {
         "name": "JAE Kimberly Clark Venezuela",
-        "description": "Aplicación web informativa, que muestra información de la empresa, sus productos y servicios, con el objetivo de generar una fuente de ingresos para el sector de venta de productos higiénicos.",
-        "image": "img/projects/jaekcv.webp",
+        "description": "Informative web application, which shows information about the company, its products and services, with the aim of generating a source of income for the hygienic products sales sector.",
+        "image": "jaekcv.webp",
         "url": "https://caciquemaracay.com.ve/",
         "repo": null,
         "year": "2019",
@@ -182,9 +182,9 @@
         "tags": ["Hygiene", "Commerce", "Products"]
       },
       {
-        "name": "Tienda Comercial",
-        "description": "Aplicación web que permite a los usuarios registrarse y comprar productos en el sector comercial, con el objetivo de generar una fuente de ingresos para el sector de venta de productos comerciales.",
-        "image": "img/projects/tiendacv.webp",
+        "name": "Commercial shop",
+        "description": "Web application that allows users to register and buy products in the commercial sector, with the aim of generating a source of income for the commercial product sales sector.",
+        "image": "tiendacv.webp",
         "url": null,
         "repo": "https://github.com/luisb0992/tiendacv",
         "year": "2018",
@@ -197,8 +197,8 @@
       },
       {
         "name": "Fikrea",
-        "description": "Aplicación web para firmar y compartir tus documentos con tus colaboradores, clientes y proveedores, junto a servicios como almacenamiento en la nube, verificación de documentos, firma electrónica, etc.",
-        "image": "img/projects/fikrea.webp",
+        "description": "Web application to sign and share your documents with your collaborators, clients and suppliers, together with services such as cloud storage, document verification, electronic signature, etc..",
+        "image": "fikrea.webp",
         "url": "https://fikrea.com/",
         "repo": "https://github.com/luisb0992/fikrea",
         "year": "2021",
@@ -207,12 +207,13 @@
           { "category": "Vue", "clase": "success" },
           { "category": "Docker", "clase": "info" },
           { "category": "Javascript", "clase": "warning" }
-        ]
+        ],
+        "tags": ["Sign", "Cloud", "Documents"]
       },
       {
-        "name": "Videos y Cuestionarios",
-        "description": "Aplicación web que permite a los usuarios ver videos y resolver cuestionarios, para el entrenamiento y aprendizaje de los usuarios socios.",
-        "image": "img/projects/cuestionarios.webp",
+        "name": "Videos and Quizzes",
+        "description": "Web application that allows users to watch videos and solve quizzes, for the training and learning of partner users.",
+        "image": "cuestionarios.webp",
         "url": "https://luisbardev-cuestionario.herokuapp.com/",
         "repo": "https://github.com/luisb0992/cuentionarios",
         "year": "2022",
@@ -224,9 +225,9 @@
         "tags": ["Learning", "Social", "Videos", "Quizzes"]
       },
       {
-        "name": "App Control de Ventas de Servicios",
-        "description": "Aplicación web que permite llevar un control del sector de venta de servicios informáticos, tales como marketing, desarrollo, diseño, etc.",
-        "image": "img/projects/app_ventas.webp",
+        "name": "Service Sales Control App",
+        "description": "Web application that allows you to keep track of the computer services sales sector, such as marketing, development, design, etc.",
+        "image": "app_ventas.webp",
         "url": "http://app-ventas-3j.herokuapp.com/",
         "repo": "https://github.com/luisb0992/app-ventas",
         "year": "2022",
@@ -237,6 +238,21 @@
           { "category": "Javascript", "clase": "warning" }
         ],
         "tags": ["Sales", "Services", "Marketing", "Development", "Design"]
+      },
+      {
+        "name": "App Proyect Global",
+        "description": "Company specialized in Human Resources outsourcing services, with more than 3 years of experience, working with large companies.",
+        "image": "proyect_global.webp",
+        "url": "https://proyectglobal.org/",
+        "repo": "https://github.com/Project4Design/orbit-chile",
+        "year": "2022",
+        "tecnologies": [
+          { "category": "Laravel", "clase": "danger" },
+          { "category": "Vue", "clase": "success" },
+          { "category": "Inertia", "clase": "warning" },
+          { "category": "Javascript", "clase": "warning" }
+        ],
+        "tags": ["Sales", "Outsourcing", "RRHH", "Services", "Jobs"]
       }
     ]
   }

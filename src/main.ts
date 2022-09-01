@@ -5,11 +5,9 @@ import trans from "./lang/config";
 import RRSS from "./utils/RRSS";
 import './assets/css/tailwind.css';
 import cors from 'cors';
-// const cors = require('cors')
 
 const app = createApp(App);
 app.provide("axios", (app.config.globalProperties.axios = axios));
 app.provide("trans", trans);
 app.provide("RRSS", RRSS);
-// app.use(cors());
 app.mount("#app");

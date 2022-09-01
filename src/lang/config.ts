@@ -7,12 +7,12 @@
 // -------------------------------
 // imports
 // -------------------------------
-import { reactive, Ref, ref } from "vue";
+import { reactive, Ref, ref, watch } from "vue";
 
 // ---------------------------------------------------------------
 // objeto reactivo para identificar la configuración del idioma
 // ---------------------------------------------------------------
-const lang = reactive({
+export const lang = reactive({
   lang: import.meta.env.VITE_LANG,
 });
 
@@ -21,17 +21,21 @@ const lang = reactive({
 // -------------------------------------------------
 const data: Ref = ref([]);
 
-// -------------------------------
+// let trans: Function;
+
+// watch
+watch(
+  () => lang.lang,
+  async (newVal, oldVal) => {
+    // import dinámico
+    data.value = await import(/* @vite-ignore */ `./${newVal}/app`);
+  }
+);
+
 // import dinámico
-// -------------------------------
 data.value = await import(/* @vite-ignore */ `./${lang.lang}/app`);
 
-/**
- * Buscar una palabra en el idioma actual de la app
- *
- * @param val string    palabra a buscar
- */
+// función que comprueba el valor a buscar
 const trans: Function = (val: string) => data.value.default[val] ?? val;
-
 
 export default trans;

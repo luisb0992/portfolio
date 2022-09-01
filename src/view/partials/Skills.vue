@@ -20,7 +20,10 @@ const trans: Function = inject("trans");
 
       <!-- contenido -->
       <div class="flex flex-wrap">
-        <div class="p-4 md:w-1/3 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
+        <!-- frontend -->
+        <div
+          class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
+        >
           <div class="flex rounded-lg h-full bg-gray-50 p-8 flex-col border">
             <div class="flex items-center mb-3">
               <div
@@ -130,39 +133,9 @@ const trans: Function = inject("trans");
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
-                  <span>{{ trans("bootstrap") }}</span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>{{ trans("tailwind") }}</span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>{{ trans("materialize") }}</span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>{{ trans("jest") }}</span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>{{ trans("cypress") }}</span>
+                  <span>{{ trans("bootstrap") }}</span
+                  >, <span>{{ trans("tailwind") }}</span
+                  >, <span>{{ trans("materialize") }}</span>
                 </a>
                 <a>
                   <span
@@ -172,25 +145,21 @@ const trans: Function = inject("trans");
                   </span>
                   <span>{{ trans("pwa") }}</span>
                 </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>{{ trans("electron") }}</span>
-                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-4 md:w-1/3 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
+
+        <!-- backend -->
+        <div
+          class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
+        >
           <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col border">
             <div class="flex items-center mb-3">
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0 font-extrabold"
               >
-                <i class="fa-brands fa-laravel"></i>
+                <i class="fa-solid fa-cube"></i>
               </div>
               <h2 class="text-gray-900 text-lg title-font font-medium">
                 {{ trans("backend") }}
@@ -225,46 +194,6 @@ const trans: Function = inject("trans");
                     <i class="fas fa-check text-xs"></i>
                   </span>
                   <span>
-                    {{ trans("github") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("gitlab") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("bitbucket") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("git") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
                     {{ trans("api") }}
                   </span>
                 </a>
@@ -276,46 +205,6 @@ const trans: Function = inject("trans");
                   </span>
                   <span>
                     {{ trans("rest") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("unittest") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("solid") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("websocket") }}
-                  </span>
-                </a>
-                <a>
-                  <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
-                  >
-                    <i class="fas fa-check text-xs"></i>
-                  </span>
-                  <span>
-                    {{ trans("apache") }}
                   </span>
                 </a>
                 <a>
@@ -338,11 +227,65 @@ const trans: Function = inject("trans");
                     {{ trans("express") }}
                   </span>
                 </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("caching") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("ssr") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("https") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("ssl") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("cors") }}
+                  </span>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-4 md:w-1/3 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
+
+        <!-- Base de datos -->
+        <div
+          class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
+        >
           <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col border">
             <div class="flex items-center mb-3">
               <div
@@ -445,6 +388,162 @@ const trans: Function = inject("trans");
                   <span>
                     {{ trans("transaction") }}
                   </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("db_normalization") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("authentication") }}
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- herramientas -->
+        <div
+          class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
+        >
+          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col border">
+            <div class="flex items-center mb-3">
+              <div
+                class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
+              >
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h2 class="text-gray-900 text-lg title-font font-medium">
+                {{ trans("tools") }}
+              </h2>
+            </div>
+            <div class="flex-grow">
+              <div class="flex flex-col items-start text-left space-y-2 leading-relaxed text-base">
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("github") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("gitlab") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("bitbucket") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("git") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("unittest") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("solid") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("websocket") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("apache") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>
+                    {{ trans("docker") }}
+                  </span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>{{ trans("jest") }}</span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>{{ trans("cypress") }}</span>
+                </a>
+                <a>
+                  <span
+                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                  >
+                    <i class="fas fa-check text-xs"></i>
+                  </span>
+                  <span>{{ trans("electron") }}</span>
                 </a>
               </div>
             </div>
