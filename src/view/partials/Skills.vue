@@ -29,7 +29,7 @@ const trans: any = inject("trans");
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
               >
-                <i class="fas fa-code"></i>
+                <font-awesome-icon icon="fa-solid fa-code" />
               </div>
               <h3 class="text-gray-200 text-lg font-medium">
                 {{ trans("frontend") }}
@@ -159,7 +159,7 @@ const trans: any = inject("trans");
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0 font-extrabold"
               >
-                <i class="fa-solid fa-cube"></i>
+                <font-awesome-icon icon="fa-solid fa-cube" />
               </div>
               <h2 class="text-gray-200 text-lg font-medium">
                 {{ trans("backend") }}
@@ -291,7 +291,7 @@ const trans: any = inject("trans");
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
               >
-                <i class="fas fa-database"></i>
+                <font-awesome-icon icon="fa-solid fa-database" />
               </div>
               <h2 class="text-gray-200 text-lg font-medium">
                 {{ trans("database") }}
@@ -423,7 +423,7 @@ const trans: any = inject("trans");
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
               >
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <font-awesome-icon icon="fa-solid fa-screwdriver-wrench" />
               </div>
               <h2 class="text-gray-200 text-lg title-font font-medium">
                 {{ trans("tools") }}
