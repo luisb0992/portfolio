@@ -16,7 +16,6 @@ const RRSS = inject("RRSS");
             classes="w-20 h-20 bg-gray-200 rounded-full"
             src="/src/assets/Img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
           />
-          <!-- <span class="ml-3 text-xl">Luisbardev</span> -->
         </a>
         <p class="text-base sm:ml-4 sm:mt-0 mt-4">
           {{ year }} —

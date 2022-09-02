@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { inject } from "vue";
 
-const trans: Function = inject("trans");
+const trans = inject("trans");
 </script>
 
 <template>

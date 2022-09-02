@@ -4,7 +4,6 @@ import { inject } from "vue";
 const trans = inject("trans");
 </script>
 <template>
-  <!-- <div class="h-full absolute w-full bg-personal-brown-1 bg-opacity-10"></div> -->
   <section
     class="text-gray-600 flex items-center justify-center py-20 md:py-0 animate-fade-in-down bg-cover md:h-screen bg-workspace-1920 px-8 md:px-0"
     id="whoiam"
