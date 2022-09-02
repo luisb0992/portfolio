@@ -35,7 +35,7 @@ module.exports = {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
-        "workspace-1920": "url('/src/assets/Img/header/workspace-1920.jpg')",
+        "workspace-1920": "url('/src/assets/Img/header/workspace-1920.webp')",
       },
     },
   },
