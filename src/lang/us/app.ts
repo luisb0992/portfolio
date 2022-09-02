@@ -1,8 +1,12 @@
 const data:{} = {
   luisbardev: "LuisBarDev",
+  luisandev: "LuisAnDev",
+  luisan: "LuisAn",
   luisbar: "LuisBar",
-  fullName: "Luis Gerardo Barrios",
+  fullName: "Luis Annunziato",
   portfolio: "Portfolio",
+  ing: "Ing. ",
+  iamdeveloper: "I Am Software Developer",
   contact: "Contact",
   about: "About",
   aboutMe: "I am a web developer, passionate about technology and programming. I have more than 6 years of experience as a developer, using technologies such as PHP, JAVASCRIPT, NODEJS, HTML, CSS. I have always developed software tailored to each client and it has been a pleasure to help them achieve their goals.",
@@ -85,6 +89,7 @@ const data:{} = {
   docker: "Docker",
   spanish: "ES",
   english: "US",
+  downloadCV: "Download CV",
 };
 
 export default data;

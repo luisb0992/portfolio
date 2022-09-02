@@ -1,11 +1,15 @@
 const data:{} = {
   luisbardev: "LuisBarDev",
+  luisandev: "LuisAnDev",
+  luisan: "LuisAn",
   luisbar: "LuisBar",
-  fullName: "Luis Gerardo Barrios",
+  fullName: "Luis Annunziato",
+  ing: "Ing. ",
   portfolio: "Portafolio",
   contact: "Contacto",
   about: "Acerca de",
-  aboutMe: "Soy un desarrollador web, apasionado por la tecnología y la programación. Tengo mas de 6 años de experiencia como desarrollador, utilizando tecnologías como PHP, JAVASCRIPT, NODEJS, HTML, CSS. Siempre he desarrollado software adaptado a la medida de cada cliente y ha sido un placer ayudarles a alcanzar sus objetivos.",
+  iamdeveloper: "Desarrollador de software",
+  aboutMe: "Soy un desarrollador web, apasionado por la tecnología y la programación. Tengo mas de 6 años de experiencia como desarrollador, utilizando tecnologías como PHP, JAVASCRIPT, NODEJS, HTML, CSS. He desarrollado software adaptado a la medida de cada cliente y ha sido un placer ayudarles para alcanzar sus objetivos.",
   home: "Inicio",
   skills: "Habilidades",
   experience: "Experiencia",
@@ -87,6 +91,7 @@ const data:{} = {
   english: "US",
   technologies: "Tecnologías",
   ano: "Año",
+  downloadCV: "Descargar CV",
 };
 
 export default data;

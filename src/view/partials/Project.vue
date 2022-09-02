@@ -100,13 +100,15 @@ const filterForYear: Function = () => {
 </script>
 
 <template>
-  <section class="text-gray-600 bg-slate-50">
+  <div class="bg-personal-gray-1 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div>
+  <section class="text-gray-600 bg-personal-gray-1" id="projects">
+    <!-- <div class="h-full w-full border-4 bg-gray-900 bg-opacity-25 absolute"></div> -->
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-10">
-        <h4 class="text-xs text-logo-light-blue tracking-widest font-medium mb-1">
+        <h4 class="text-sm text-gray-200 tracking-widest font-semibold mb-1">
           {{ trans("allProjects") }}
         </h4>
-        <h3 class="sm:text-3xl text-2xl font-medium text-logo-dark-blue">
+        <h3 class="text-4xl font-medium text-gray-100">
           {{ trans("projects") }}
         </h3>
       </div>
@@ -116,7 +118,7 @@ const filterForYear: Function = () => {
         <div class="flex flex-wrap flex-row items-center justify-center">
           <div class="mb-3 mr-1">
             <select
-              class="block w-auto px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-gray-600 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-gray-600 focus:outline-none"
               @change="filterForTechnologie()"
               v-model="tecSelected"
             >
@@ -126,7 +128,7 @@ const filterForYear: Function = () => {
           </div>
           <div class="mb-3">
             <select
-              class="block w-auto px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+              class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-gray-600 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-gray-600 focus:outline-none"
               @change="filterForYear()"
               v-model="yearSelected"
             >
@@ -140,15 +142,17 @@ const filterForYear: Function = () => {
 
       <!-- cards - proyectos -->
       <div class="flex flex-wrap items-stretch transition ease-in-out delay-150">
-        <div class="xl:w-1/4 md:w-1/2 p-2 animate-fade-in-down" v-for="(proyect, index) in proyectsOrdered" :key="index">
-          <div class="rounded-lg bg-white shadow-md h-full flex flex-col justify-between">
+        <div class="xl:w-1/4 md:w-1/2 p-2" v-for="(proyect, index) in proyectsOrdered" :key="index">
+          <div
+            class="rounded-lg bg-personal-gray-2 shadow-2xl h-full flex flex-col justify-between animate-fade-in-down"
+          >
             <div class="p-4">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
                 :src="`./../../../src/assets/Img/projects/${proyect.image}`"
-                alt="content"
+                :alt="proyect.name"
               />
-              <h2 class="text-lg text-logo-dark-blue font-medium mb-4">
+              <h2 class="text-xl text-gray-200 font-semibold mb-4">
                 {{ proyect.name }}
                 <span class="text-gray-400 text-sm">- {{ proyect.year }} </span>
               </h2>
@@ -157,7 +161,7 @@ const filterForYear: Function = () => {
               </p>
               <p class="flex flex-wrap my-4 gap-2">
                 <span
-                  class="bg-red-100 text-red-500 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  class="bg-personal-gray-1 text-gray-50 text-xs font-semibold mr-2 px-2.5 py-1 rounded"
                   v-for="(tec, index2) in proyect.tecnologies"
                   :key="index2"
                 >
@@ -165,31 +169,11 @@ const filterForYear: Function = () => {
                 </span>
               </p>
             </div>
-            <div class="flex flex-row justify-between px-4 border">
-              <div class="py-4">
-                <a
-                  :href="proyect.url"
-                  class="text-logo-dark-blue inline-flex items-center text-sm hover:text-logo-dark-blue-500"
-                  target="_blank"
-                >
-                  {{ trans("visitarSitio") }}
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+            <div class="flex flex-row justify-between px-4 items-center">
               <div class="py-4">
                 <a
                   :href="proyect.repo ?? '#'"
-                  class="text-logo-light-blue inline-flex items-center text-sm hover:text-logo-light-blue-500"
+                  class="text-gray-400 inline-flex items-center text-base hover:text-gray-300"
                   target="_blank"
                 >
                   {{ trans("visitarRepo") }}
@@ -199,11 +183,35 @@ const filterForYear: Function = () => {
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-2"
+                    class="w-4 h-4 ml-2 mt-1"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
+                </a>
+              </div>
+              <div class="py-4">
+                <a
+                  :href="proyect.url"
+                  class="text-gray-400 inline-flex items-center text-base hover:text-gray-300"
+                  target="_blank"
+                >
+                  <p>
+                    {{ trans("visitarSitio") }}
+                  </p>
+                  <p>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2 mt-1"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </p>
                 </a>
               </div>
             </div>

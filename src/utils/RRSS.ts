@@ -15,4 +15,5 @@ export default reactive({
   facebook: "https://www.facebook.com/luisbardev",
   emailOne: "luisbarrios0992@gmail.com",
   emailTwo: "luisbardev@gmail.com",
+  emailThree: "luisandev@gmail.com",
 });

@@ -5,14 +5,14 @@ const trans: Function = inject("trans");
 </script>
 
 <template>
-  <section class="text-gray-600 bg-white">
+  <section class="bg-gradient-to-t from-personal-brown-1 to-[#2b262a]" id="skills">
     <div class="container px-5 py-24 mx-auto">
       <!-- header -->
       <div class="flex flex-col text-center w-full mb-10">
-        <h2 class="text-xs text-logo-light-blue tracking-widest font-medium title-font mb-1">
+        <h2 class="text-sm text-gray-300 tracking-widest font-semibold mb-1">
           {{ trans("allExperience") }}
         </h2>
-        <h2 class="sm:text-3xl text-2xl font-medium title-font text-logo-dark-blue">
+        <h2 class="text-4xl font-medium text-gray-200">
           {{ trans("skills") }}
         </h2>
       </div>
@@ -24,22 +24,22 @@ const trans: Function = inject("trans");
         <div
           class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
         >
-          <div class="flex rounded-lg h-full bg-gray-50 p-8 flex-col border">
-            <div class="flex items-center mb-3">
+          <div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+            <div class="flex items-center mb-3 -ml-3">
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
               >
                 <i class="fas fa-code"></i>
               </div>
-              <h2 class="text-gray-900 text-lg title-font font-medium">
+              <h3 class="text-gray-200 text-lg font-medium">
                 {{ trans("frontend") }}
-              </h2>
+              </h3>
             </div>
-            <div class="flex-grow">
+            <div class="flex-grow text-gray-200">
               <div class="flex flex-col items-start text-left space-y-2 leading-relaxed text-base">
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-200 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -49,7 +49,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -57,7 +57,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -65,7 +65,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -73,7 +73,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -81,7 +81,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -89,7 +89,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -97,7 +97,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -105,7 +105,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -113,7 +113,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -121,7 +121,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -129,7 +129,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -139,7 +139,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -154,22 +154,22 @@ const trans: Function = inject("trans");
         <div
           class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
         >
-          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col border">
-            <div class="flex items-center mb-3">
+          <div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+            <div class="flex items-center mb-3 -ml-3">
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0 font-extrabold"
               >
                 <i class="fa-solid fa-cube"></i>
               </div>
-              <h2 class="text-gray-900 text-lg title-font font-medium">
+              <h2 class="text-gray-200 text-lg font-medium">
                 {{ trans("backend") }}
               </h2>
             </div>
-            <div class="flex-grow">
+            <div class="flex-grow text-gray-200">
               <div class="flex flex-col items-start text-left space-y-2 leading-relaxed text-base">
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -179,7 +179,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -189,7 +189,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -199,7 +199,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -209,7 +209,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -219,7 +219,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -229,7 +229,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -239,7 +239,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -249,7 +249,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -259,7 +259,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -269,7 +269,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -286,22 +286,22 @@ const trans: Function = inject("trans");
         <div
           class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
         >
-          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col border">
-            <div class="flex items-center mb-3">
+          <div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+            <div class="flex items-center mb-3 -ml-3">
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
               >
                 <i class="fas fa-database"></i>
               </div>
-              <h2 class="text-gray-900 text-lg title-font font-medium">
+              <h2 class="text-gray-200 text-lg font-medium">
                 {{ trans("database") }}
               </h2>
             </div>
-            <div class="flex-grow">
+            <div class="flex-grow text-gray-200">
               <div class="flex flex-col items-start text-left space-y-2 leading-relaxed text-base">
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -311,7 +311,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -321,7 +321,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -331,7 +331,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -341,7 +341,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -351,7 +351,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -361,7 +361,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -371,7 +371,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -381,7 +381,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -391,7 +391,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -401,7 +401,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -418,22 +418,22 @@ const trans: Function = inject("trans");
         <div
           class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500"
         >
-          <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col border">
-            <div class="flex items-center mb-3">
+          <div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+            <div class="flex items-center mb-3 -ml-3">
               <div
                 class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-logo-dark-blue text-white flex-shrink-0"
               >
                 <i class="fa-solid fa-screwdriver-wrench"></i>
               </div>
-              <h2 class="text-gray-900 text-lg title-font font-medium">
+              <h2 class="text-gray-200 text-lg title-font font-medium">
                 {{ trans("tools") }}
               </h2>
             </div>
-            <div class="flex-grow">
+            <div class="flex-grow text-gray-200">
               <div class="flex flex-col items-start text-left space-y-2 leading-relaxed text-base">
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -443,7 +443,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -453,7 +453,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -463,7 +463,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -473,7 +473,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -483,7 +483,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -493,7 +493,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -503,7 +503,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -513,7 +513,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -523,7 +523,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -531,7 +531,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
@@ -539,7 +539,7 @@ const trans: Function = inject("trans");
                 </a>
                 <a>
                   <span
-                    class="bg-indigo-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
+                    class="bg-gray-100 text-logo-light-blue w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center"
                   >
                     <i class="fas fa-check text-xs"></i>
                   </span>
