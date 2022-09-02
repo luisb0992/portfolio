@@ -2,6 +2,7 @@
 import { inject } from "vue";
 
 const trans: any = inject("trans");
+
 </script>
 <template>
   <section
