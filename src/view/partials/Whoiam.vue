@@ -12,7 +12,7 @@ const trans: any = inject("trans");
       <div class="flex flex-col md:flex-row w-full gap-20 items-center">
         <div class="lg:w-1/2 w-full text-center lg:text-left">
           <h1
-            class="text-4xl sm:text-7xl font-semibold mb-2 text-white items-center uppercase leading-tight"
+            class="text-[2rem] sm:text-7xl font-semibold mb-2 text-white items-center uppercase leading-tight"
           >
             {{ trans("iamdeveloper") }}
           </h1>

@@ -14,7 +14,7 @@ const RRSS: any = inject("RRSS");
         <a class="flex font-medium items-center md:justify-start justify-center">
           <Logo
             classes="w-20 h-20 bg-gray-200 rounded-full"
-            src="/src/assets/Img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
+            src="/src/assets/img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
           />
         </a>
         <p class="text-base sm:ml-4 sm:mt-0 mt-4">

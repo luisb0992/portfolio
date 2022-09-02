@@ -36,7 +36,7 @@ const toScroll: Function = (id: string) => {
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200"
       >
-        <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+        <nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2">
           <a class="mr-5 hover:text-gray-300" href="javascript:void(0)" @click="toScroll('home')">{{
             trans("home")
           }}</a>
@@ -55,7 +55,7 @@ const toScroll: Function = (id: string) => {
         >
           <Logo
             classes="w-16 h-16 bg-gray-200 rounded-full"
-            src="/src/assets/Img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
+            src="/src/assets/img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
           />
         </a>
 

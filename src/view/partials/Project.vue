@@ -149,7 +149,7 @@ const filterForYear: Function = () => {
             <div class="p-4">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
-                :src="`./../../../src/assets/Img/projects/${proyect.image}`"
+                :src="`/src/assets/img/projects/${proyect.image}`"
                 :alt="proyect.name"
               />
               <h2 class="text-xl text-gray-200 font-semibold mb-4">
