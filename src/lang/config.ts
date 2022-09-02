@@ -8,6 +8,8 @@
 // imports
 // -------------------------------
 import { reactive, Ref, ref, watch } from "vue";
+import localeES from "./es/app";
+import localeUS from "./us/app";
 
 // ---------------------------------------------------------------
 // objeto reactivo para identificar la configuración del idioma
@@ -20,22 +22,28 @@ export const lang = reactive({
 // objeto reactivo para almacenar las traducciones
 // -------------------------------------------------
 const data: Ref = ref([]);
-
-// let trans: Function;
+data.value = localeES;
 
 // watch
 watch(
   () => lang.lang,
   async (newVal, oldVal) => {
-    // import dinámico
-    data.value = await import(/* @vite-ignore */ `./${newVal}/app`);
+    if (newVal == "es") {
+      data.value = localeES;
+    } else {
+      data.value = localeUS;
+    }
   }
 );
 
-// import dinámico
-data.value = await import(/* @vite-ignore */ `./${lang.lang}/app`);
+/**
+ * Función translate de la app
+ */
+const trans = reactive({
+  locale: (val: string) => {
+    return data.value[val] ?? val;
+  },
+});
 
-// función que comprueba el valor a buscar
-const trans: Function = (val: string) => data.value.default[val] ?? val;
-
-export default trans;
+// exportar la función trans.locale
+export default trans.locale;

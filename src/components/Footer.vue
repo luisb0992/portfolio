@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { inject, ref } from "vue";
+import { inject, Ref, ref } from "vue";
 import Logo from "/src/components/Logo.vue";
 
-const year = ref(new Date().getFullYear());
-const RRSS = inject("RRSS");
+const year: Ref = ref(new Date().getFullYear());
+const RRSS: any = inject("RRSS");
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { inject } from "vue";
 
-const trans = inject("trans");
+const trans: any = inject("trans");
 </script>
 <template>
   <section

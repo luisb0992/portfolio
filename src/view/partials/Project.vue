@@ -8,10 +8,10 @@ import { technologies, yearsExperience } from "./../../utils/functions";
 // -------------
 // refs, inject
 // --------------
-const trans = inject("trans");
+const trans: any = inject("trans");
+const years: [] = yearsExperience("2016");
 const proyectsOrdered: Ref = ref([]);
 const originalProyects: Ref = ref([]);
-const years: [] = yearsExperience("2016");
 const tecSelected: Ref = ref(0);
 const yearSelected: Ref = ref(0);
 
@@ -123,7 +123,7 @@ const filterForYear: Function = () => {
               v-model="tecSelected"
             >
               <option value="0" selected>{{ trans("technologies") }}</option>
-              <option :value="tec" v-for="tec in technologies" :key="tec">{{ tec }}</option>
+              <option :value="tec" v-for="(tec, index) in technologies" :key="index">{{ tec }}</option>
             </select>
           </div>
           <div class="mb-3">

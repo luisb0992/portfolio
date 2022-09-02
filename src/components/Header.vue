@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { inject, Ref, ref } from "vue";
-import Logo from "/src/components/Logo.vue";
 import { lang } from "./../lang/config";
+import Logo from "/src/components/Logo.vue";
 
-const trans = inject("trans");
-const RRSS = inject("RRSS");
+const trans: any = inject("trans");
+const RRSS: any = inject("RRSS");
 const es: Ref = ref(true);
 
+/**
+ * Cambiar de lenguaje
+ */
 const changeLanguaje: Function = () => {
   if (es.value) {
     es.value = false;
@@ -17,6 +20,9 @@ const changeLanguaje: Function = () => {
   lang.lang = "es";
 };
 
+/**
+ * Moverse entre secciones
+ */
 const toScroll: Function = (id: string) => {
   const section = document.getElementById(id);
   const position = section ? section.getBoundingClientRect() : { top: 0 };
