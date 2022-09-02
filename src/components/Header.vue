@@ -55,7 +55,7 @@ const toScroll: Function = (id: string) => {
         >
           <Logo
             classes="w-16 h-16 bg-gray-200 rounded-full"
-            src="/src/assets/img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
+            src="/assets/img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
           />
         </a>
 

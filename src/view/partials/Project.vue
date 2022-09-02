@@ -97,10 +97,6 @@ const filterForYear: Function = () => {
       ? projects.filter((pro: any) => pro.year == yearSelected.value)
       : projects;
 };
-
-function getImageUrl(name: string) {
-  return new URL(`/src/assets/img/projects/${name}`, import.meta.url).href;
-}
 </script>
 
 <template>
@@ -127,9 +123,7 @@ function getImageUrl(name: string) {
               v-model="tecSelected"
             >
               <option value="0" selected>{{ trans("technologies") }}</option>
-              <option :value="tec" v-for="(tec, index) in technologies" :key="index">
-                {{ tec }}
-              </option>
+              <option :value="tec" v-for="(tec, index) in technologies" :key="index">{{ tec }}</option>
             </select>
           </div>
           <div class="mb-3">
@@ -155,7 +149,7 @@ function getImageUrl(name: string) {
             <div class="p-4">
               <img
                 class="h-40 rounded w-full object-cover object-center mb-6"
-                :src="getImageUrl(proyect.image)"
+                :src="`/assets/img/projects/${proyect.image}`"
                 :alt="proyect.name"
               />
               <h2 class="text-xl text-gray-200 font-semibold mb-4">
