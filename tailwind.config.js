@@ -15,6 +15,7 @@ module.exports = {
         "personal-brown-2": "#2b262a",
         "personal-gray-1": "#111827",
         "personal-gray-2": "#1f2937",
+        "personal-gray-3": "#253040",
       },
       keyframes: {
         "fade-in-down": {
@@ -27,9 +28,49 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        "slide-in-blurred-top": {
+          "0%": {
+            "-webkit-transform": "translateY(-1000px) scaleY(2.5) scaleX(0.2)",
+            transform: "translateY(-1000px) scaleY(2.5) scaleX(0.2)",
+            "-webkit-transform-origin": "50% 0%",
+            "transform-origin": "50% 0%",
+            "-webkit-filter": "blur(40px)",
+            filter: "blur(40px)",
+            opacity: "0",
+          },
+          "100%": {
+            "-webkit-transform": "translateY(0) scaleY(1) scaleX(1)",
+            transform: "translateY(0) scaleY(1) scaleX(1)",
+            "-webkit-transform-origin": "50% 50%",
+            "transform-origin": "50% 50%",
+            "-webkit-filter": "blur(0)",
+            filter: "blur(0)",
+            opacity: "1",
+          },
+        },
+        "swing-in-top-fwd": {
+          "0%": {
+            "-webkit-transform": "rotateX(-100deg)",
+            transform: "rotateX(-100deg)",
+            "-webkit-transform-origin": "top",
+            "transform-origin": "top",
+            opacity: 0,
+          },
+
+          "100%": {
+            "-webkit-transform": "rotateX(0deg)",
+            transform: "rotateX(0deg)",
+            "-webkit-transform-origin": "top",
+            "transform-origin": "top",
+            opacity: 1,
+          },
+        },
       },
       animation: {
         "fade-in-down": "fade-in-down 0.6s ease-in",
+        "slide-in-blurred-top":
+          "slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both",
+        "swing-in-top-fwd": "swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both",
       },
       fontFamily: {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],

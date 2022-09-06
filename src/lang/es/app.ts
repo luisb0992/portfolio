@@ -92,6 +92,8 @@ const data:{} = {
   technologies: "Tecnologías",
   ano: "Año",
   downloadCV: "Descargar CV",
+  showMore: "Mostrar más...",
+  showLess: "Mostrar menos...",
 };
 
 export default data;

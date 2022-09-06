@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { inject, watch, onMounted, ref, Ref, toRaw } from "vue";
+import { inject, watch, onMounted, ref, Ref, toRaw, computed, ComputedRef } from "vue";
 import proyectos from "./../../API/DB/ES/es.json";
 import proyects from "./../../API/DB/US/us.json";
 import { lang } from "./../../lang/config";
@@ -11,7 +11,7 @@ import { technologies, yearsExperience } from "./../../utils/functions";
 const trans: any = inject("trans");
 const years: [] = yearsExperience("2016");
 const proyectsOrdered: Ref = ref([]);
-const originalProyects: Ref = ref([]);
+const showMoreProjects: Ref = ref(false);
 const tecSelected: Ref = ref(0);
 const yearSelected: Ref = ref(0);
 
@@ -25,11 +25,19 @@ watch(
   }
 );
 
+// ---------
+// computed
+// ---------
+const isThereFilter: ComputedRef = computed(
+  () => tecSelected.value == 0 && yearSelected.value == 0
+);
+
 // --------
 // mounted
 // --------
 onMounted(() => {
   loadProyects(lang.lang);
+  loadLimitProjects();
 });
 
 // -----------------------
@@ -41,9 +49,8 @@ onMounted(() => {
  */
 const loadProyects: Function = (languaje: string) => {
   // definir los proyectos a mostrar
-  const pES = proyectos.es.proyectos;
-  const pUS = proyects.us.projects;
-  originalProyects.value = languaje === "es" ? pES : pUS;
+  const pES = JSON.parse(JSON.stringify(proyectos.es.proyectos));
+  const pUS = JSON.parse(JSON.stringify(proyects.us.projects));
   proyectsOrdered.value = languaje === "es" ? pES : pUS;
 };
 
@@ -58,18 +65,28 @@ const filterTec: Function = (projects: []) => {
 };
 
 /**
+ * Obtiene los proyectos originales o todos los proyectos
+ */
+const getOriginalProjects: Function = () => {
+  const pES = JSON.parse(JSON.stringify(proyectos.es.proyectos));
+  const pUS = JSON.parse(JSON.stringify(proyects.us.projects));
+  return lang.lang === "es" ? pES : pUS;
+};
+
+/**
  * Filtra los proyectos por la tecnología seleccionada
  */
 const filterForTechnologie: Function = () => {
-  if (tecSelected.value == 0 && yearSelected.value == 0) {
-    proyectsOrdered.value = originalProyects.value;
+  if (isThereFilter.value) {
+    showMoreProjects.value = false;
+    proyectsOrdered.value = getOriginalProjects();
     return;
   }
 
   // si hay un año seleccionado tomar en cuenta
-  let projects = originalProyects.value;
+  let projects = getOriginalProjects();
   if (yearSelected.value != 0) {
-    projects = originalProyects.value.filter((pro: any) => pro.year == yearSelected.value);
+    projects = projects.filter((pro: any) => pro.year == yearSelected.value);
   }
 
   // filtrar por la selección de la tecnología
@@ -80,15 +97,16 @@ const filterForTechnologie: Function = () => {
  * Filtrar según el año seleccionado
  */
 const filterForYear: Function = () => {
-  if (tecSelected.value == 0 && yearSelected.value == 0) {
-    proyectsOrdered.value = originalProyects.value;
+  if (isThereFilter.value) {
+    showMoreProjects.value = false;
+    proyectsOrdered.value = getOriginalProjects();
     return;
   }
 
   // si hay una tecnología seleccionada
-  let projects = originalProyects.value;
+  let projects = getOriginalProjects();
   if (tecSelected.value != 0) {
-    projects = filterTec(originalProyects.value);
+    projects = filterTec(projects);
   }
 
   // filtrar según la selección del año
@@ -96,6 +114,30 @@ const filterForYear: Function = () => {
     yearSelected.value != 0
       ? projects.filter((pro: any) => pro.year == yearSelected.value)
       : projects;
+};
+
+/**
+ * Carga un máximo de 8 proyectos por sección
+ */
+const loadLimitProjects: Function = () => {
+  const projects = getOriginalProjects();
+
+  if (projects.length > 4) {
+    showMoreProjects.value = true;
+    proyectsOrdered.value.splice(8);
+  }
+};
+
+const showMoreOrLessProjects: Function = () => {
+  const projects = getOriginalProjects();
+
+  if (showMoreProjects.value) {
+    showMoreProjects.value = false;
+    proyectsOrdered.value = projects;
+    return;
+  }
+
+  loadLimitProjects();
 };
 </script>
 
@@ -123,7 +165,9 @@ const filterForYear: Function = () => {
               v-model="tecSelected"
             >
               <option value="0" selected>{{ trans("technologies") }}</option>
-              <option :value="tec" v-for="(tec, index) in technologies" :key="index">{{ tec }}</option>
+              <option :value="tec" v-for="(tec, index) in technologies" :key="index">
+                {{ tec }}
+              </option>
             </select>
           </div>
           <div class="mb-3">
@@ -144,7 +188,7 @@ const filterForYear: Function = () => {
       <div class="flex flex-wrap items-stretch transition ease-in-out delay-150">
         <div class="xl:w-1/4 md:w-1/2 p-2" v-for="(proyect, index) in proyectsOrdered" :key="index">
           <div
-            class="rounded-lg bg-personal-gray-2 shadow-2xl h-full flex flex-col justify-between animate-fade-in-down"
+            class="rounded-lg bg-personal-gray-2 shadow-2xl h-full flex flex-col justify-between animate-swing-in-top-fwd hover:bg-personal-gray-3"
           >
             <div class="p-4">
               <img
@@ -221,6 +265,18 @@ const filterForYear: Function = () => {
         </div>
       </div>
       <!-- /cards -->
+
+      <!-- mostrar mas -->
+      <div class="flex justify-center items-center py-6" v-if="isThereFilter">
+        <button
+          class="text-base font-light text-gray-200 bg-personal-gray-2 hover:bg-personal-gray-3 px-4 py-3 rounded"
+          @click="showMoreOrLessProjects()"
+        >
+          <span v-if="showMoreProjects"> {{ trans("showMore") }} </span>
+          <span v-else> {{ trans("showLess") }} </span>
+        </button>
+      </div>
+      <!-- /mostrar mas -->
     </div>
   </section>
 </template>
