@@ -59,36 +59,38 @@ const toScroll: Function = (id: string) => {
           />
         </a>
 
-        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+        <div class="lg:w-2/5 inline-flex justify-center lg:justify-end items-center">
           <a
             :href="RRSS.linkedin"
             target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-1 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
           >
             <font-awesome-icon icon="fa-brands fa-linkedin-in" />
           </a>
           <a
             :href="RRSS.github"
             target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-1 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
           >
             <font-awesome-icon icon="fa-brands fa-github" />
           </a>
           <a
             :href="'mailto:' + RRSS.emailOne"
             target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-1 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
           >
             <font-awesome-icon icon="fa-solid fa-envelope" />
           </a>
           <a
             :href="RRSS.whatsapp"
             target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-1 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
           >
             <font-awesome-icon icon="fa-brands fa-whatsapp" />
           </a>
-          <div class="border-r px-1 mr-2 border-gray-600 mt-4 md:mt-0"></div>
+          <div class="border-r mx-2 border-gray-600 mt-4 lg:mt-0">
+            &nbsp;
+          </div>
           <button
             class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0"
             :class="es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"

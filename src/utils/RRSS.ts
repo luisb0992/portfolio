@@ -7,7 +7,7 @@
 import { reactive } from "vue";
 
 export default reactive({
-  linkedin: "https://www.linkedin.com/in/luisbardev",
+  linkedin: "https://www.linkedin.com/in/luisandev",
   twitter: "https://twitter.com/LuisBarDev",
   instagram: "https://www.instagram.com/luisbardev",
   github: "https://www.github.com/luisb0992/",

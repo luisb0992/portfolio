@@ -253,6 +253,36 @@
           { "category": "Javascript", "clase": "warning" }
         ],
         "tags": ["Sales", "Outsourcing", "RRHH", "Services", "Jobs"]
+      },
+      {
+        "name": "Diemar gestión y encomiendas",
+        "description": "Empresa que presta servicios de encomienda en toda Argentina, con las mejores tarifas del mercado y tracking de artículos.",
+        "image": "diemar_gestion.webp",
+        "url": "https://gestion.sistemaexpreso.com.ar/#/login",
+        "repo": "https://gitlab.com/grupo-market/diemar/expreso",
+        "year": "2022",
+        "tecnologies": [
+          { "category": "Laravel", "clase": "danger" },
+          { "category": "Vue", "clase": "success" },
+          { "category": "API", "clase": "success" },
+          { "category": "Javascript", "clase": "warning" }
+        ],
+        "tags": ["hipments", "parcels", "tracking", "deliveries"]
+      },
+      {
+        "name": "Expo Print Santiago",
+        "description": "Exposición anual de charlas sobre lo ultimo de la industria gráfica de Latinoamérica, con un formato de comunicación híbrido y multiplataforma.",
+        "image": "expo_santiago.webp",
+        "url": "https://www.printstgo.cl/",
+        "repo": "https://github.com/gabriel-rl/expo-print-pack-latam",
+        "year": "2022",
+        "tecnologies": [
+          { "category": "Laravel", "clase": "danger" },
+          { "category": "Vue", "clase": "success" },
+          { "category": "JQuery", "clase": "success" },
+          { "category": "MariaDB", "clase": "warning" }
+        ],
+        "tags": ["exposition", "talks", "video calls", "industries"]
       }
     ]
   }

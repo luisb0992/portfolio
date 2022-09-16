@@ -22,6 +22,7 @@ watch(
   () => lang.lang,
   (newVal) => {
     loadProyects(newVal);
+    showMoreOrLessProjects();
   }
 );
 

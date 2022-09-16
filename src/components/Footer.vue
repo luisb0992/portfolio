@@ -20,10 +20,10 @@ const RRSS: any = inject("RRSS");
         <p class="text-base sm:ml-4 sm:mt-0 mt-4">
           {{ year }} —
           <a :href="RRSS.linkedin" rel="noopener noreferrer" class="ml-1" target="_blank">
-            @luisbardev
+            @luisandev
           </a>
         </p>
-        <div class="gap-1 inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <div class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a
             :href="RRSS.facebook"
             target="_blank"

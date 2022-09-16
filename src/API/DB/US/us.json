@@ -253,6 +253,36 @@
           { "category": "Javascript", "clase": "warning" }
         ],
         "tags": ["Sales", "Outsourcing", "RRHH", "Services", "Jobs"]
+      },
+      {
+        "name": "Diemar management and parcels",
+        "description": "Company that provides parcel services throughout Argentina, with the best market rates and item tracking.",
+        "image": "diemar_gestion.webp",
+        "url": "https://gestion.sistemaexpreso.com.ar/#/login",
+        "repo": "https://gitlab.com/grupo-market/diemar/expreso",
+        "year": "2022",
+        "tecnologies": [
+          { "category": "Laravel", "clase": "danger" },
+          { "category": "Vue", "clase": "success" },
+          { "category": "API", "clase": "success" },
+          { "category": "Javascript", "clase": "warning" }
+        ],
+        "tags": ["hipments", "parcels", "tracking", "deliveries"]
+      },
+      {
+        "name": "Expo Print Santiago",
+        "description": "Annual exhibition of talks about the latest in the Latin American graphic industry, with a hybrid and multiplatform communication format.",
+        "image": "expo_santiago.webp",
+        "url": "https://www.printstgo.cl/",
+        "repo": "https://github.com/gabriel-rl/expo-print-pack-latam",
+        "year": "2022",
+        "tecnologies": [
+          { "category": "Laravel", "clase": "danger" },
+          { "category": "Vue", "clase": "success" },
+          { "category": "JQuery", "clase": "success" },
+          { "category": "MariaDB", "clase": "warning" }
+        ],
+        "tags": ["exposition", "talks", "video calls", "industries"]
       }
     ]
   }
