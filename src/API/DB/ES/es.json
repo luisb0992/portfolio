@@ -1,289 +1,347 @@
 {
-  "es": {
-    "proyectos": [
-      {
-        "name": "Perulinks",
-        "description": "Desarrollo de una aplicación web para la gestión de perulinks, una herramienta que permite el streaming de películas y series, asi como la gestión de los mismos.",
-        "image": "perulink.webp",
-        "url": "http://perulinks.com/",
-        "repo": null,
-        "year": "2018",
-        "tecnologies": [
-          { "category": "laravel", "clase": "danger" },
-          { "category": "Vuejs", "clase": "success" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "API", "clase": "success" }
-        ],
-        "tags": ["Streaming", "Movies", "TV shows", "Management"]
-      },
-      {
-        "name": "Coches Bebes",
-        "description": "Desarrollo de una aplicación web para la gestión de los coches de los bebes, lleva el control de las ventas e inventario de artículos.",
-        "image": "coches_bebe.webp",
-        "url": "http://panel.littlebru.com/",
-        "repo": "https://github.com/luisb0992/inventariocb",
-        "year": "2017",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" }
-        ],
-        "tags": ["Babies", "Cars", "Inventory", "Sales", "Management"]
-      },
-      {
-        "name": "Savo Rental",
-        "description": "Desarrollo de una aplicación web para la gestión de los vehículos de la empresa Savo Rental, lleva el control de alquiler de vehículos distribuidos en diferentes empresas y sucursales.",
-        "image": "savo.webp",
-        "url": "http://savo.savorent.com/",
-        "repo": "https://github.com/luisb0992/savo",
-        "year": "2020",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" }
-        ],
-        "tags": ["Vehicles", "Rental", "Management", "Multi-currency", "branch office"]
-      },
-      {
-        "name": "Planificacion de actividades",
-        "description": "Desarrollo de una aplicación web para la gestión de las actividades de la empresa KCV, lleva el control de las actividades de la empresa y de los empleados, asignación de tareas y reportes.",
-        "image": "actividades.webp",
-        "url": null,
-        "repo": "https://gitlab.com/CaciqueDev/actividades",
-        "year": "2019",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Activities", "Management", "Assignment", "Reports", "Personal"]
-      },
-      {
-        "name": "Control y Seguimiento de planta",
-        "description": "Desarrollo de una aplicación web para la gestión de la producción de las plantas en la empresa KCV, lleva el control de materia prima, asi como empaquetamiento y distribución.",
-        "image": "cys.webp",
-        "url": null,
-        "repo": "https://gitlab.com/CaciqueDev/syc",
-        "year": "2018",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Production", "Management", "Packaging", "Distribution", "Raw materials"]
-      },
-      {
-        "name": "Acceso de Personal KCV",
-        "description": "Desarrollo de una aplicación web para la gestión de los accesos de personal a la empresa KCV, lleva el control de los accesos de personal y de los empleados, implementa un código QR a distintas áreas de la planta.",
-        "image": "qr.webp",
-        "url": null,
-        "repo": "https://gitlab.com/CaciqueDev/Acceso",
-        "year": "2017",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Access", "Management", "QR code", "Personal"]
-      },
-      {
-        "name": "Academia Rusa",
-        "description": "Aplicación web que provee información de las universidades en Rusia, ajustando precios y horarios de los cursos.",
-        "image": "academia_rusa.webp",
-        "url": "https://academiarusa.com/",
-        "repo": null,
-        "year": "2019",
-        "tecnologies": [
-          { "category": "Wordpress", "clase": "primary" },
-          { "category": "PHP", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Academia", "Education", "Russia", "Courses"]
-      },
-      {
-        "name": "Teraminer C.A",
-        "description": "Empresa Fintech Venezolana dedicada al uso de la tecnología blockchain en procesos comerciales, financieros e industriales. Plataforma interactiva para la comercialización de equipos tecnológicos, multimedia, servicios y minería digital.",
-        "image": "teraminer.webp",
-        "url": "https://teraminer.com.ve/",
-        "repo": null,
-        "year": "2020",
-        "tecnologies": [
-          { "category": "Wordpress", "clase": "primary" },
-          { "category": "PHP", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Fintech", "Blockchain", "Technology", "Commerce", "Mining"]
-      },
-      {
-        "name": "Agropatria S.A",
-        "description": "Empresa dedicada a la comercialización de productos agrícolas, con el objetivo de generar una fuente de ingresos para el sector agrícola.",
-        "image": "agropatria.webp",
-        "url": null,
-        "repo": "https://github.com/luisb0992/Agropatria",
-        "year": "2016",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Agriculture", "Commerce", "Products"]
-      },
-      {
-        "name": "TALS",
-        "description": "Aplicación web adaptativa que ayuda a los usuarios con discapacidad visual, a realizar actividades de aprendizaje y de apoyo a la vida diaria.",
-        "image": "tals.webp",
-        "url": null,
-        "repo": "https://github.com/luisb0992/tals",
-        "year": "2018",
-        "tecnologies": [
-          { "category": "HTML", "clase": "success" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Visual", "Learning", "Life"]
-      },
-      {
-        "name": "Inmuebles Peruanos",
-        "description": "Aplicación web que permite a los usuarios registrarse y comprar inmuebles en Perú, con el objetivo de generar una fuente de ingresos para el sector inmobiliario.",
-        "image": "inmuebles_peru.webp",
-        "url": "http://inmuebles.littlebru.com/",
-        "repo": null,
-        "year": "2016",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Real estate", "Commerce", "Products"]
-      },
-      {
-        "name": "Distribuidora Génesis",
-        "description": "Aplicación web que permite a los usuarios registrarse y comprar productos de anteojos al mayor, con el objetivo de generar una fuente de ingresos para el sector de venta de productos de anteojos.",
-        "image": "distribuidora_genesis.webp",
-        "url": "http://distribuidoragenesis.net/",
-        "repo": "https://github.com/luisb0992/DistribuidoraGenesis",
-        "year": "2018",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Glasses", "Distribution", "Products", "Commerce"]
-      },
-      {
-        "name": "JAE Kimberly Clark Venezuela",
-        "description": "Aplicación web informativa, que muestra información de la empresa, sus productos y servicios, con el objetivo de generar una fuente de ingresos para el sector de venta de productos higiénicos.",
-        "image": "jaekcv.webp",
-        "url": "https://caciquemaracay.com.ve/",
-        "repo": null,
-        "year": "2019",
-        "tecnologies": [
-          { "category": "Wordpress", "clase": "primary" },
-          { "category": "PHP", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Hygiene", "Commerce", "Products"]
-      },
-      {
-        "name": "Tienda Comercial",
-        "description": "Aplicación web que permite a los usuarios registrarse y comprar productos en el sector comercial, con el objetivo de generar una fuente de ingresos para el sector de venta de productos comerciales.",
-        "image": "tiendacv.webp",
-        "url": null,
-        "repo": "https://github.com/luisb0992/tiendacv",
-        "year": "2018",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "JQuery", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Commerce", "Products", "Paypal"]
-      },
-      {
-        "name": "Fikrea",
-        "description": "Aplicación web para firmar y compartir tus documentos con tus colaboradores, clientes y proveedores, junto a servicios como almacenamiento en la nube, verificación de documentos, firma electrónica, etc.",
-        "image": "fikrea.webp",
-        "url": "https://fikrea.com/",
-        "repo": "https://github.com/luisb0992/fikrea",
-        "year": "2021",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "Vue", "clase": "success" },
-          { "category": "Docker", "clase": "info" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Sign", "Cloud", "Documents"]
-      },
-      {
-        "name": "Videos y Cuestionarios",
-        "description": "Aplicación web que permite a los usuarios ver videos y resolver cuestionarios, para el entrenamiento y aprendizaje de los usuarios socios.",
-        "image": "cuestionarios.webp",
-        "url": "https://luisbardev-cuestionario.herokuapp.com/",
-        "repo": "https://github.com/luisb0992/cuentionarios",
-        "year": "2022",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "Vue", "clase": "success" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Learning", "Social", "Videos", "Quizzes"]
-      },
-      {
-        "name": "App Control de Ventas de Servicios",
-        "description": "Aplicación web que permite llevar un control del sector de venta de servicios informáticos, tales como marketing, desarrollo, diseño, etc.",
-        "image": "app_ventas.webp",
-        "url": "http://app-ventas-3j.herokuapp.com/",
-        "repo": "https://github.com/luisb0992/app-ventas",
-        "year": "2022",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "Vue", "clase": "success" },
-          { "category": "Inertia", "clase": "warning" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Sales", "Services", "Marketing", "Development", "Design"]
-      },
-      {
-        "name": "App Proyect Global",
-        "description": "Empresa especializada en servicios de outsourcing de Recursos Humanos, con más de 3 años de trayectoria, trabajando con grandes compañías.",
-        "image": "proyect_global.webp",
-        "url": "https://proyectglobal.org/",
-        "repo": "https://github.com/Project4Design/orbit-chile",
-        "year": "2022",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "Vue", "clase": "success" },
-          { "category": "Inertia", "clase": "warning" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["Sales", "Outsourcing", "RRHH", "Services", "Jobs"]
-      },
-      {
-        "name": "Diemar gestión y encomiendas",
-        "description": "Empresa que presta servicios de encomienda en toda Argentina, con las mejores tarifas del mercado y tracking de artículos.",
-        "image": "diemar_gestion.webp",
-        "url": "https://gestion.sistemaexpreso.com.ar/#/login",
-        "repo": "https://gitlab.com/grupo-market/diemar/expreso",
-        "year": "2022",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "Vue", "clase": "success" },
-          { "category": "API", "clase": "success" },
-          { "category": "Javascript", "clase": "warning" }
-        ],
-        "tags": ["hipments", "parcels", "tracking", "deliveries"]
-      },
-      {
-        "name": "Expo Print Santiago",
-        "description": "Exposición anual de charlas sobre lo ultimo de la industria gráfica de Latinoamérica, con un formato de comunicación híbrido y multiplataforma.",
-        "image": "expo_santiago.webp",
-        "url": "https://www.printstgo.cl/",
-        "repo": "https://github.com/gabriel-rl/expo-print-pack-latam",
-        "year": "2022",
-        "tecnologies": [
-          { "category": "Laravel", "clase": "danger" },
-          { "category": "Vue", "clase": "success" },
-          { "category": "JQuery", "clase": "success" },
-          { "category": "MariaDB", "clase": "warning" }
-        ],
-        "tags": ["exposition", "talks", "video calls", "industries"]
-      }
-    ]
-  }
+	"es": {
+		"proyectos": [
+			{
+				"name": "Perulinks",
+				"description": "Desarrollo de una aplicación web para la gestión de perulinks, una herramienta que permite el streaming de películas y series, asi como la gestión de los mismos.",
+				"image": "perulink.webp",
+				"url": "http://perulinks.com/",
+				"repo": null,
+				"year": "2018",
+				"tecnologies": [
+					{ "category": "laravel", "clase": "danger" },
+					{ "category": "Vuejs", "clase": "success" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "API", "clase": "success" }
+				],
+				"tags": ["Streaming", "Movies", "TV shows", "Management"]
+			},
+			{
+				"name": "Coches Bebes",
+				"description": "Desarrollo de una aplicación web para la gestión de los coches de los bebes, lleva el control de las ventas e inventario de artículos.",
+				"image": "coches_bebe.webp",
+				"url": "http://panel.littlebru.com/",
+				"repo": "https://github.com/luisb0992/inventariocb",
+				"year": "2017",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" }
+				],
+				"tags": ["Babies", "Cars", "Inventory", "Sales", "Management"]
+			},
+			{
+				"name": "Savo Rental",
+				"description": "Desarrollo de una aplicación web para la gestión de los vehículos de la empresa Savo Rental, lleva el control de alquiler de vehículos distribuidos en diferentes empresas y sucursales.",
+				"image": "savo.webp",
+				"url": "http://savo.savorent.com/",
+				"repo": "https://github.com/luisb0992/savo",
+				"year": "2020",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" }
+				],
+				"tags": ["Vehicles", "Rental", "Management", "Multi-currency", "branch office"]
+			},
+			{
+				"name": "Planificacion de actividades",
+				"description": "Desarrollo de una aplicación web para la gestión de las actividades de la empresa KCV, lleva el control de las actividades de la empresa y de los empleados, asignación de tareas y reportes.",
+				"image": "actividades.webp",
+				"url": null,
+				"repo": "https://gitlab.com/CaciqueDev/actividades",
+				"year": "2019",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Activities", "Management", "Assignment", "Reports", "Personal"]
+			},
+			{
+				"name": "Control y Seguimiento de planta",
+				"description": "Desarrollo de una aplicación web para la gestión de la producción de las plantas en la empresa KCV, lleva el control de materia prima, asi como empaquetamiento y distribución.",
+				"image": "cys.webp",
+				"url": null,
+				"repo": "https://gitlab.com/CaciqueDev/syc",
+				"year": "2018",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Production", "Management", "Packaging", "Distribution", "Raw materials"]
+			},
+			{
+				"name": "Acceso de Personal KCV",
+				"description": "Desarrollo de una aplicación web para la gestión de los accesos de personal a la empresa KCV, lleva el control de los accesos de personal y de los empleados, implementa un código QR a distintas áreas de la planta.",
+				"image": "qr.webp",
+				"url": null,
+				"repo": "https://gitlab.com/CaciqueDev/Acceso",
+				"year": "2017",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Access", "Management", "QR code", "Personal"]
+			},
+			{
+				"name": "Academia Rusa",
+				"description": "Aplicación web que provee información de las universidades en Rusia, ajustando precios y horarios de los cursos.",
+				"image": "academia_rusa.webp",
+				"url": "https://academiarusa.com/",
+				"repo": null,
+				"year": "2019",
+				"tecnologies": [
+					{ "category": "Wordpress", "clase": "primary" },
+					{ "category": "PHP", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Academia", "Education", "Russia", "Courses"]
+			},
+			{
+				"name": "Teraminer C.A",
+				"description": "Empresa Fintech Venezolana dedicada al uso de la tecnología blockchain en procesos comerciales, financieros e industriales. Plataforma interactiva para la comercialización de equipos tecnológicos, multimedia, servicios y minería digital.",
+				"image": "teraminer.webp",
+				"url": "https://teraminer.com.ve/",
+				"repo": null,
+				"year": "2020",
+				"tecnologies": [
+					{ "category": "Wordpress", "clase": "primary" },
+					{ "category": "PHP", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Fintech", "Blockchain", "Technology", "Commerce", "Mining"]
+			},
+			{
+				"name": "Agropatria S.A",
+				"description": "Empresa dedicada a la comercialización de productos agrícolas, con el objetivo de generar una fuente de ingresos para el sector agrícola.",
+				"image": "agropatria.webp",
+				"url": null,
+				"repo": "https://github.com/luisb0992/Agropatria",
+				"year": "2016",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Agriculture", "Commerce", "Products"]
+			},
+			{
+				"name": "TALS",
+				"description": "Aplicación web adaptativa que ayuda a los usuarios con discapacidad visual, a realizar actividades de aprendizaje y de apoyo a la vida diaria.",
+				"image": "tals.webp",
+				"url": null,
+				"repo": "https://github.com/luisb0992/tals",
+				"year": "2018",
+				"tecnologies": [
+					{ "category": "HTML", "clase": "success" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Visual", "Learning", "Life"]
+			},
+			{
+				"name": "Inmuebles Peruanos",
+				"description": "Aplicación web que permite a los usuarios registrarse y comprar inmuebles en Perú, con el objetivo de generar una fuente de ingresos para el sector inmobiliario.",
+				"image": "inmuebles_peru.webp",
+				"url": "http://inmuebles.littlebru.com/",
+				"repo": null,
+				"year": "2016",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Real estate", "Commerce", "Products"]
+			},
+			{
+				"name": "Distribuidora Génesis",
+				"description": "Aplicación web que permite a los usuarios registrarse y comprar productos de anteojos al mayor, con el objetivo de generar una fuente de ingresos para el sector de venta de productos de anteojos.",
+				"image": "distribuidora_genesis.webp",
+				"url": "http://distribuidoragenesis.net/",
+				"repo": "https://github.com/luisb0992/DistribuidoraGenesis",
+				"year": "2018",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Glasses", "Distribution", "Products", "Commerce"]
+			},
+			{
+				"name": "JAE Kimberly Clark Venezuela",
+				"description": "Aplicación web informativa, que muestra información de la empresa, sus productos y servicios, con el objetivo de generar una fuente de ingresos para el sector de venta de productos higiénicos.",
+				"image": "jaekcv.webp",
+				"url": "https://caciquemaracay.com.ve/",
+				"repo": null,
+				"year": "2019",
+				"tecnologies": [
+					{ "category": "Wordpress", "clase": "primary" },
+					{ "category": "PHP", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Hygiene", "Commerce", "Products"]
+			},
+			{
+				"name": "Tienda Comercial",
+				"description": "Aplicación web que permite a los usuarios registrarse y comprar productos en el sector comercial, con el objetivo de generar una fuente de ingresos para el sector de venta de productos comerciales.",
+				"image": "tiendacv.webp",
+				"url": null,
+				"repo": "https://github.com/luisb0992/tiendacv",
+				"year": "2018",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "JQuery", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Commerce", "Products", "Paypal"]
+			},
+			{
+				"name": "Fikrea",
+				"description": "Aplicación web para firmar y compartir tus documentos con tus colaboradores, clientes y proveedores, junto a servicios como almacenamiento en la nube, verificación de documentos, firma electrónica, etc.",
+				"image": "fikrea.webp",
+				"url": "https://fikrea.com/",
+				"repo": "https://github.com/luisb0992/fikrea",
+				"year": "2021",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "Docker", "clase": "info" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Sign", "Cloud", "Documents"]
+			},
+			{
+				"name": "Videos y Cuestionarios",
+				"description": "Aplicación web que permite a los usuarios ver videos y resolver cuestionarios, para el entrenamiento y aprendizaje de los usuarios socios.",
+				"image": "cuestionarios.webp",
+				"url": "https://luisbardev-cuestionario.herokuapp.com/",
+				"repo": "https://github.com/luisb0992/cuentionarios",
+				"year": "2022",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Learning", "Social", "Videos", "Quizzes"]
+			},
+			{
+				"name": "App Control de Ventas de Servicios",
+				"description": "Aplicación web que permite llevar un control del sector de venta de servicios informáticos, tales como marketing, desarrollo, diseño, etc.",
+				"image": "app_ventas.webp",
+				"url": "http://app-ventas-3j.herokuapp.com/",
+				"repo": "https://github.com/luisb0992/app-ventas",
+				"year": "2022",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "Inertia", "clase": "warning" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Sales", "Services", "Marketing", "Development", "Design"]
+			},
+			{
+				"name": "App Proyect Global",
+				"description": "Empresa especializada en servicios de outsourcing de Recursos Humanos, con más de 3 años de trayectoria, trabajando con grandes compañías.",
+				"image": "proyect_global.webp",
+				"url": "https://proyectglobal.org/",
+				"repo": "https://github.com/Project4Design/orbit-chile",
+				"year": "2022",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "Inertia", "clase": "warning" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["Sales", "Outsourcing", "RRHH", "Services", "Jobs"]
+			},
+			{
+				"name": "Diemar gestión y encomiendas",
+				"description": "Empresa que presta servicios de encomienda en toda Argentina, con las mejores tarifas del mercado y tracking de artículos.",
+				"image": "diemar_gestion.webp",
+				"url": "https://gestion.sistemaexpreso.com.ar/#/login",
+				"repo": "https://gitlab.com/grupo-market/diemar/expreso",
+				"year": "2022",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "API", "clase": "success" },
+					{ "category": "Javascript", "clase": "warning" }
+				],
+				"tags": ["hipments", "parcels", "tracking", "deliveries"]
+			},
+			{
+				"name": "Expo Print Santiago",
+				"description": "Exposición anual de charlas sobre lo ultimo de la industria gráfica de Latinoamérica, con un formato de comunicación híbrido y multiplataforma.",
+				"image": "expo_santiago.webp",
+				"url": "https://www.printstgo.cl/",
+				"repo": "https://github.com/gabriel-rl/expo-print-pack-latam",
+				"year": "2022",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "JQuery", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" }
+				],
+				"tags": ["exposition", "talks", "video calls", "industries"]
+			},
+			{
+				"name": "Myeart",
+				"description": "La primera comunidad más grande de artistas en todo el mundo, un espacio donde la creatividad, la inspiración y el amor por el arte.",
+				"image": "myeart.webp",
+				"url": "https://myeart.org/",
+				"repo": "https://github.com/startupcommunity/myeart",
+				"year": "2023",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" },
+					{ "category": "API", "clase": "success" }
+				],
+				"tags": ["artists", "community", "creativity", "inspiration"]
+			},
+			{
+				"name": "Bahia Motors",
+				"description": "Comercializar con profesionalismo, las marcas Honda y Acura en Panamá, satisfaciendo las expectativas de calidad, lujo, confort y seguridad de todos nuestros clientes, brindando un excelente respaldo de post venta y la atención que aseguren la continua preferencia por los productos que representamos.",
+				"image": "bahia_motors.webp",
+				"url": "https://ordenesreparacion.bahiamotors.com/",
+				"repo": "https://github.com/luisb0992/app-vehiculos",
+				"year": "2023",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" },
+					{ "category": "API", "clase": "success" }
+				],
+				"tags": ["vehicles", "repair", "Acura", "Honda"]
+			},
+			{
+				"name": "The startup community",
+				"description": "La comunidad que conecta Startups, Profesionales e Inversión. Nuestra misión consiste en aportar la conexión para que puedas desarrollar proyectos únicos que te permitan alcanzar nuevos universos.",
+				"image": "startup_community.webp",
+				"url": "https://thestartup-community.com/",
+				"repo": "https://github.com/startupcommunity/startup",
+				"year": "2023",
+				"tecnologies": [
+					{ "category": "Laravel", "clase": "danger" },
+					{ "category": "Vue", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" }
+				],
+				"tags": ["community", "startups", "projects", "investments"]
+			},
+			{
+				"name": "Asesoria de cara",
+				"description": "Nos enfocamos en proporcionar soluciones personalizadas y efectivas para las necesidades de cada área de tu empresa. Nuestros profesionales son los aliados confiables y proactivos para lograr el éxito.",
+				"image": "asesoria_cara.webp",
+				"url": "https://thestartup-company.com/",
+				"repo": "#",
+				"year": "2023",
+				"tecnologies": [
+					{ "category": "Wordpress", "clase": "danger" },
+					{ "category": "Elementor", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" }
+				],
+				"tags": ["advisory", "consulting", "business", "company"]
+			}
+		]
+	}
 }
