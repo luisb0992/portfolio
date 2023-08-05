@@ -4,7 +4,6 @@ import axios from "axios";
 import trans from "./lang/config";
 import RRSS from "./utils/RRSS";
 import "./assets/css/tailwind.css";
-// import cors from 'cors';
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";

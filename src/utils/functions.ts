@@ -4,8 +4,6 @@
  * @author Luis Barrios
  */
 
-import { Ref, ref } from "vue";
-
 /**
  * calcula los años de experiencia y los agrega al array
  *

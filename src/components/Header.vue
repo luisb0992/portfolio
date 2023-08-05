@@ -1,114 +1,121 @@
 <script setup lang="ts">
-import { inject, Ref, ref } from "vue";
-import { lang } from "./../lang/config";
-import Logo from "/src/components/Logo.vue";
+	import { inject, InjectionKey, Ref, ref } from 'vue';
+	import { lang } from './../lang/config';
+	import Logo from '/src/components/Logo.vue';
 
-const trans: any = inject("trans");
-const RRSS: any = inject("RRSS");
-const es: Ref = ref(true);
+	// redes
+	const RRSS: any = inject('RRSS');
+	const trans: any = inject('trans');
+	const es: Ref<boolean> = ref(true);
 
-/**
- * Cambiar de lenguaje
- */
-const changeLanguaje: Function = () => {
-  if (es.value) {
-    es.value = false;
-    return (lang.lang = "us");
-  }
+	// const TransKey: InjectionKey<Trans> = Symbol();
+	// const trans: InjectionKey<Trans> = inject('trans');
+	// (en esta linea tambien infieres que no es undefined)
+	// const result = trans?.locale('clave1');
 
-  es.value = true;
-  lang.lang = "es";
-};
+	// ejemplos
+	// const trans: () => string = inject('trans');
+	// const trans: ((val: string) => string) | undefined = inject('trans');
 
-/**
- * Moverse entre secciones
- */
-const toScroll: Function = (id: string) => {
-  const section = document.getElementById(id);
-  const position = section ? section.getBoundingClientRect() : { top: 0 };
-  window.scrollTo({ top: position.top, behavior: "smooth" });
-};
+	/**
+	 * Cambiar de lenguaje
+	 */
+	const changeLanguaje: VoidFunction = () => {
+		if (es.value) {
+			es.value = false;
+			return (lang.lang = 'us');
+		}
+
+		es.value = true;
+		lang.lang = 'es';
+	};
+
+	/**
+	 * Moverse entre secciones
+	 */
+	const toScroll: Function = (id: string) => {
+		const section = document.getElementById(id);
+		const position = section ? section.getBoundingClientRect() : { top: 0 };
+		window.scrollTo({ top: position.top, behavior: 'smooth' });
+	};
 </script>
 
 <template>
-  <div class="bg-personal-gray-1">
-    <header>
-      <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200"
-      >
-        <nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2">
-          <a class="mr-5 hover:text-gray-300" href="javascript:void(0)" @click="toScroll('home')">{{
-            trans("home")
-          }}</a>
-          <a class="mr-5 hover:text-gray-300" href="javascript:void(0)" @click="toScroll('whoiam')">
-            {{ trans("whoiam") }}
-          </a>
-          <a class="mr-5 hover:text-gray-300" href="javascript:void(0)" @click="toScroll('skills')">
-            {{ trans("skills") }}
-          </a>
-          <a class="hover:text-gray-300" href="javascript:void(0)" @click="toScroll('projects')">
-            {{ trans("projects") }}
-          </a>
-        </nav>
-        <a
-          class="flex order-first lg:order-none lg:w-1/5 font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
-        >
-          <Logo
-            classes="w-16 h-16 bg-gray-200 rounded-full"
-            src="/assets/img/ISOTIPO-ORIGINAL-TRANSPARENTE.webp"
-          />
-        </a>
+	<header class="bg-personal-gray-1">
+		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200">
+			<nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2">
+				<a
+					class="mr-5 hover:text-gray-300 transition-all duration-300"
+					href="javascript:void(0)"
+					@click="toScroll('home')">
+					{{ trans('home') }}
+				</a>
+				<a
+					class="mr-5 hover:text-gray-300 transition-all duration-300"
+					href="javascript:void(0)"
+					@click="toScroll('whoiam')">
+					{{ trans('whoiam') }}
+				</a>
+				<a
+					class="mr-5 hover:text-gray-300 transition-all duration-300"
+					href="javascript:void(0)"
+					@click="toScroll('skills')">
+					{{ trans('skills') }}
+				</a>
+				<a
+					class="hover:text-gray-300 transition-all duration-300"
+					href="javascript:void(0)"
+					@click="toScroll('projects')">
+					{{ trans('projects') }}
+				</a>
+			</nav>
+			<a class="flex order-first lg:order-none lg:w-1/5 font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+				<Logo
+					classes="w-16 h-16 bg-gray-200 rounded-full pr-1"
+					src="/assets/img/isotipo-luisandev.webp" />
+			</a>
 
-        <div class="lg:w-2/5 inline-flex justify-center lg:justify-end items-center">
-          <a
-            :href="RRSS.linkedin"
-            target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
-          >
-            <font-awesome-icon icon="fa-brands fa-linkedin-in" />
-          </a>
-          <a
-            :href="RRSS.github"
-            target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
-          >
-            <font-awesome-icon icon="fa-brands fa-github" />
-          </a>
-          <a
-            :href="'mailto:' + RRSS.emailOne"
-            target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
-          >
-            <font-awesome-icon icon="fa-solid fa-envelope" />
-          </a>
-          <a
-            :href="RRSS.whatsapp"
-            target="_blank"
-            class="inline-flex items-center focus:outline-none text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0"
-          >
-            <font-awesome-icon icon="fa-brands fa-whatsapp" />
-          </a>
-          <div class="border-r mx-2 border-gray-600 mt-4 lg:mt-0">
-            &nbsp;
-          </div>
-          <button
-            class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0"
-            :class="es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"
-            @click="changeLanguaje()"
-            :disabled="es"
-          >
-            <span> {{ trans("spanish") }} </span>
-          </button>
-          <button
-            class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 focus:outline-none text-base mt-4 md:mt-0"
-            :class="!es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"
-            @click="changeLanguaje()"
-            :disabled="!es"
-          >
-            <span> {{ trans("english") }} </span>
-          </button>
-        </div>
-      </div>
-    </header>
-  </div>
+			<div class="lg:w-2/5 inline-flex justify-center lg:justify-end items-center">
+				<a
+					:href="RRSS.linkedin"
+					target="_blank"
+					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					<font-awesome-icon icon="fa-brands fa-linkedin-in" />
+				</a>
+				<a
+					:href="RRSS.github"
+					target="_blank"
+					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					<font-awesome-icon icon="fa-brands fa-github" />
+				</a>
+				<a
+					:href="'mailto:' + RRSS.emailOne"
+					target="_blank"
+					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					<font-awesome-icon icon="fa-solid fa-envelope" />
+				</a>
+				<a
+					:href="RRSS.whatsapp"
+					target="_blank"
+					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					<font-awesome-icon icon="fa-brands fa-whatsapp" />
+				</a>
+				<div class="border-r mx-2 border-gray-600 mt-4 lg:mt-0">&nbsp;</div>
+				<button
+					class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 text-base mt-4 md:mt-0 transition-all duration-300"
+					:class="es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"
+					@click="changeLanguaje()"
+					:disabled="es">
+					<span> {{ trans('spanish') }} </span>
+				</button>
+				<button
+					class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 text-base mt-4 md:mt-0 transition-all duration-300"
+					:class="!es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"
+					@click="changeLanguaje()"
+					:disabled="!es">
+					<span> {{ trans('english') }} </span>
+				</button>
+			</div>
+		</div>
+	</header>
 </template>
