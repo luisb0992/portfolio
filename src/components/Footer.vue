@@ -19,7 +19,7 @@ const RRSS: any = inject("RRSS");
         </a>
         <p class="text-base sm:ml-4 sm:mt-0 mt-4">
           {{ year }} —
-          <a :href="RRSS.linkedin" rel="noopener noreferrer" class="ml-1" target="_blank">
+          <a :href="RRSS.linkedin" rel="noopener noreferrer" class="ml-1" target="_blank" aria-label="Linkedin">
             @luisandev
           </a>
         </p>
@@ -27,6 +27,7 @@ const RRSS: any = inject("RRSS");
           <a
             :href="RRSS.facebook"
             target="_blank"
+            aria-label="Facebook"
             class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
@@ -48,6 +49,7 @@ const RRSS: any = inject("RRSS");
           <a
             :href="RRSS.twitter"
             target="_blank"
+            aria-label="Twitter"
             class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
@@ -69,6 +71,7 @@ const RRSS: any = inject("RRSS");
           <a
             :href="RRSS.instagram"
             target="_blank"
+            aria-label="Instagram"
             class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
@@ -86,6 +89,7 @@ const RRSS: any = inject("RRSS");
           <a
             :href="RRSS.github"
             target="_blank"
+            aria-label="Github"
             class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
@@ -107,6 +111,7 @@ const RRSS: any = inject("RRSS");
           <a
             :href="RRSS.linkedin"
             target="_blank"
+            aria-label="Linkedin"
             class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
           >
             <font-awesome-icon icon="fa-brands fa-linkedin-in" />

@@ -26,9 +26,9 @@
 		id="projects">
 		<div class="container px-5 py-24 mx-auto">
 			<div class="flex flex-col text-center w-full mb-10">
-				<h4 class="text-sm text-gray-200 tracking-widest font-semibold mb-1">
+				<p class="text-sm text-gray-200 tracking-widest font-semibold mb-1">
 					{{ trans('allProjects') }}
-				</h4>
+				</p>
 				<h3 class="text-4xl font-medium text-gray-100">
 					{{ trans('projects') }}
 				</h3>
@@ -39,7 +39,7 @@
 				<div class="flex flex-wrap flex-row items-center justify-center">
 					<div class="mb-3 mr-1">
 						<select
-							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-gray-600 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-gray-600 focus:outline-none"
+							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-personal-gray-1 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-personal-gray-3 focus:outline-none"
 							@change="filterForTechnologie()"
 							v-model="tecSelected">
 							<option
@@ -91,11 +91,11 @@
 								height="160px"
 								:src="`/assets/img/projects/${proyect.image}`"
 								:alt="proyect.name" />
-							<h2 class="text-xl text-gray-200 font-semibold mb-4">
+							<h2 class="text-xl text-gray-50 font-semibold mb-4">
 								{{ proyect.name }}
-								<span class="text-gray-400 text-sm">- {{ proyect.year }} </span>
+								<span class="text-gray-100 text-sm">- {{ proyect.year }} </span>
 							</h2>
-							<p class="leading-relaxed text-base text-gray-400">
+							<p class="leading-relaxed text-base text-gray-100">
 								{{ proyect.description }}
 							</p>
 							<p class="flex flex-wrap my-4 gap-2">
@@ -111,7 +111,7 @@
 							<div class="py-4">
 								<a
 									:href="proyect.repo ?? '#'"
-									class="text-gray-400 inline-flex items-center text-base hover:text-gray-300"
+									class="text-gray-100 inline-flex items-center text-base font-semibold hover:text-gray-300"
 									target="_blank">
 									{{ trans('visitarRepo') }}
 									<svg
@@ -129,7 +129,7 @@
 							<div class="py-4">
 								<a
 									:href="proyect.url"
-									class="text-gray-400 inline-flex items-center text-base hover:text-gray-300"
+									class="text-gray-100 inline-flex items-center text-base font-semibold hover:text-gray-300"
 									target="_blank">
 									<p>
 										{{ trans('visitarSitio') }}

@@ -70,24 +70,28 @@
 				<a
 					:href="RRSS.linkedin"
 					target="_blank"
+					aria-label="Linkedin"
 					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-brands fa-linkedin-in" />
 				</a>
 				<a
 					:href="RRSS.github"
 					target="_blank"
+					aria-label="Github"
 					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
 				<a
 					:href="'mailto:' + RRSS.emailOne"
 					target="_blank"
+					aria-label="Email"
 					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-solid fa-envelope" />
 				</a>
 				<a
 					:href="RRSS.whatsapp"
 					target="_blank"
+					aria-label="Whatsapp"
 					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-brands fa-whatsapp" />
 				</a>

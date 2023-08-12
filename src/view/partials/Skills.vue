@@ -11,12 +11,12 @@
 		<div class="container px-5 py-24 mx-auto">
 			<!-- header -->
 			<div class="flex flex-col text-center w-full mb-10">
-				<h2 class="text-sm text-gray-300 tracking-widest font-semibold mb-1">
+				<p class="text-sm text-gray-300 tracking-widest font-semibold mb-1">
 					{{ trans('allExperience') }}
-				</h2>
-				<h2 class="text-4xl font-medium text-gray-200">
+				</p>
+				<h3 class="text-4xl font-medium text-gray-200">
 					{{ trans('skills') }}
-				</h2>
+				</h3>
 			</div>
 			<!-- /header -->
 

@@ -5,30 +5,30 @@
 </script>
 <template>
 	<section
-		class="flex items-center justify-center py-20 md:py-0 animate-fade-in-down bg-neutral-900 md:h-screen px-8 md:px-0"
+		class="flex items-center justify-center py-20 md:py-0 bg-neutral-900 md:h-screen px-8 md:px-0"
 		id="whoiam">
 		<div class="container md:px-5 mx-auto">
 			<div class="flex flex-col md:flex-row w-full gap-20 items-center">
 				<div class="max-w-7xl mx-auto">
-					<h1 class="text-center text-5xl sm:text-7xl lg:text-9xl font-semibold mb-2 text-gray-50 items-center uppercase leading-tight">
+					<h1 class="text-center text-5xl sm:text-7xl lg:text-9xl font-semibold mb-2 text-gray-50 items-center uppercase leading-tight animate-fade-in-down">
 						{{ trans('ing') }}
 						{{ trans('fullName') }}
 					</h1>
 					<article class="w-100 flex justify-center animate-slide-in-blurred-top">
 						<hr class="w-40 lg:w-96 border-2 border-personal-gray-1 rounded my-2" />
 					</article>
-					<article class="mt-5">
+					<article class="mt-5 animate-fade-in-down">
 						<p class="text-gray-200 text-3xl font-medium text-center">
 							{{ trans('iamdeveloper') }}
 						</p>
 					</article>
-					<article class="mt-5 max-w-6xl mx-auto">
+					<article class="mt-5 max-w-6xl mx-auto animate-fade-in-down">
 						<p class="leading-loose text-gray-200 text-center lg:text-left font-normal">
 							<span>{{ trans('aboutMe') }}</span>
 						</p>
-            <p class="leading-loose text-gray-400 text-center lg:text-left font-light italic mt-4">
-              {{ trans('phrase') }}
-            </p>
+						<p class="leading-loose text-gray-400 text-center lg:text-left font-light italic mt-4">
+							{{ trans('phrase') }}
+						</p>
 					</article>
 					<article class="flex justify-center mt-7">
 						<a
