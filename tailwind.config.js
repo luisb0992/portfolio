@@ -13,9 +13,9 @@ module.exports = {
         "logo-light-blue-500": "#5b7dcf",
         "personal-brown-1": "#393237",
         "personal-brown-2": "#2b262a",
-        "personal-gray-1": "#111827",
-        "personal-gray-2": "#1f2937",
-        "personal-gray-3": "#253040",
+        "personal-gray-1": "#4733cc",
+        "personal-gray-2": "#533BED",
+        "personal-gray-3": "#261B6E",
       },
       keyframes: {
         "fade-in-down": {
@@ -68,6 +68,7 @@ module.exports = {
       },
       animation: {
         "fade-in-down": "fade-in-down 0.6s ease-in",
+        "fade-in-down-large": "fade-in-down 1.2s ease-in",
         "slide-in-blurred-top":
           "slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both",
         "swing-in-top-fwd": "swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both",

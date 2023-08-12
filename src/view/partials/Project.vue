@@ -19,10 +19,10 @@
 </script>
 
 <template>
-	<div class="bg-personal-gray-1 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div>
+	<div class="bg-neutral-900 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div>
 
 	<section
-		class="text-gray-600 bg-personal-gray-1"
+		class="text-gray-600 bg-neutral-900"
 		id="projects">
 		<div class="container px-5 py-24 mx-auto">
 			<div class="flex flex-col text-center w-full mb-10">
@@ -159,7 +159,7 @@
 				class="flex justify-center items-center py-6"
 				v-if="isThereFilter">
 				<button
-					class="text-base font-light text-gray-200 bg-personal-gray-2 hover:bg-personal-gray-3 px-4 py-3 rounded"
+					class="text-base font-light text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-3 px-4 py-3 rounded transition-all duration-200 ease-in"
 					@click="showMoreOrLessProjects()">
 					<span v-if="showMoreProjects"> {{ trans('showMore') }} </span>
 					<span v-else> {{ trans('showLess') }} </span>

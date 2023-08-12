@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import { inject, InjectionKey, Ref, ref } from 'vue';
+	import { inject, Ref, ref } from 'vue';
 	import { lang } from './../lang/config';
 	import Logo from '/src/components/Logo.vue';
 
@@ -7,15 +7,6 @@
 	const RRSS: any = inject('RRSS');
 	const trans: any = inject('trans');
 	const es: Ref<boolean> = ref(true);
-
-	// const TransKey: InjectionKey<Trans> = Symbol();
-	// const trans: InjectionKey<Trans> = inject('trans');
-	// (en esta linea tambien infieres que no es undefined)
-	// const result = trans?.locale('clave1');
-
-	// ejemplos
-	// const trans: () => string = inject('trans');
-	// const trans: ((val: string) => string) | undefined = inject('trans');
 
 	/**
 	 * Cambiar de lenguaje
@@ -35,13 +26,13 @@
 	 */
 	const toScroll: Function = (id: string) => {
 		const section = document.getElementById(id);
-		const position = section ? section.getBoundingClientRect() : { top: 0 };
-		window.scrollTo({ top: position.top, behavior: 'smooth' });
+		const position = section ? section.offsetTop : 0;
+		window.scrollTo({ top: position, behavior: 'smooth' });
 	};
 </script>
 
 <template>
-	<header class="bg-personal-gray-1">
+	<header class="bg-personal-gray-1 sticky top-0 z-[1]">
 		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200">
 			<nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2">
 				<a
