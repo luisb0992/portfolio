@@ -25,10 +25,24 @@ export default function useProject() {
 		}
 	);
 
+	// ordenar los proyectos por año
+	watch(
+		() => proyectsOrdered.value,
+		(newVal) => {
+			newVal.sort((a: Project, b: Project) => {
+				return parseInt(b.year) - parseInt(a.year);
+			});
+		}
+	);
+
 	// --------
 	onMounted(() => {
 		loadProyects(lang.lang);
 		loadLimitProjects();
+		// ordenar los proyectos por año
+		// proyectsOrdered.value = proyectsOrdered.value.sort((a: Project, b: Project) => {
+		// 	return parseInt(b.year) - parseInt(a.year);
+		// });
 	});
 
 	/**
@@ -106,11 +120,24 @@ export default function useProject() {
 		const projects = getOriginalProjects();
 
 		if (projects.length > 4) {
+			orderProjects();
 			showMoreProjects.value = true;
-			proyectsOrdered.value.splice(8);
+			proyectsOrdered.value.splice(8, projects.length - 8);
 		}
 	};
 
+	/**
+	 * Ordenar los proyectos por año
+	 */
+	const orderProjects: Function = () => {
+		proyectsOrdered.value = proyectsOrdered.value.sort((a: Project, b: Project) => {
+			return parseInt(b.year) - parseInt(a.year);
+		});
+	};
+
+	/**
+	 * Muestra más o menos proyectos
+	 */
 	const showMoreOrLessProjects: Function = () => {
 		const projects = getOriginalProjects();
 

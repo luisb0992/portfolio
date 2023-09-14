@@ -211,39 +211,10 @@
 				"tags": ["Sign", "Cloud", "Documents"]
 			},
 			{
-				"name": "Videos y Cuestionarios",
-				"description": "Aplicación web que permite a los usuarios ver videos y resolver cuestionarios, para el entrenamiento y aprendizaje de los usuarios socios.",
-				"image": "cuestionarios.webp",
-				"url": "https://luisbardev-cuestionario.herokuapp.com/",
-				"repo": "https://github.com/luisb0992/cuentionarios",
-				"year": "2022",
-				"tecnologies": [
-					{ "category": "Laravel", "clase": "danger" },
-					{ "category": "Vue", "clase": "success" },
-					{ "category": "Javascript", "clase": "warning" }
-				],
-				"tags": ["Learning", "Social", "Videos", "Quizzes"]
-			},
-			{
-				"name": "App Control de Ventas de Servicios",
-				"description": "Aplicación web que permite llevar un control del sector de venta de servicios informáticos, tales como marketing, desarrollo, diseño, etc.",
-				"image": "app_ventas.webp",
-				"url": "http://app-ventas-3j.herokuapp.com/",
-				"repo": "https://github.com/luisb0992/app-ventas",
-				"year": "2022",
-				"tecnologies": [
-					{ "category": "Laravel", "clase": "danger" },
-					{ "category": "Vue", "clase": "success" },
-					{ "category": "Inertia", "clase": "warning" },
-					{ "category": "Javascript", "clase": "warning" }
-				],
-				"tags": ["Sales", "Services", "Marketing", "Development", "Design"]
-			},
-			{
 				"name": "App Proyect Global",
 				"description": "Empresa especializada en servicios de outsourcing de Recursos Humanos, con más de 3 años de trayectoria, trabajando con grandes compañías.",
 				"image": "proyect_global.webp",
-				"url": "https://proyectglobal.org/",
+				"url": "https://proyectglobal.online/",
 				"repo": "https://github.com/Project4Design/orbit-chile",
 				"year": "2022",
 				"tecnologies": [
@@ -332,7 +303,7 @@
 				"name": "Asesoria de cara",
 				"description": "Nos enfocamos en proporcionar soluciones personalizadas y efectivas para las necesidades de cada área de tu empresa. Nuestros profesionales son los aliados confiables y proactivos para lograr el éxito.",
 				"image": "asesoria_cara.webp",
-				"url": "https://thestartup-company.com/",
+				"url": "https://asesoriadecara.com/",
 				"repo": "#",
 				"year": "2023",
 				"tecnologies": [
@@ -341,6 +312,34 @@
 					{ "category": "MariaDB", "clase": "warning" }
 				],
 				"tags": ["advisory", "consulting", "business", "company"]
+			},
+			{
+				"name": "Rotary puerto banus",
+				"description": "Rotary es una red mundial compuesta de 1 400 000 vecinos, amigos, líderes y personas dedicadas a solucionar problemas, quienes ven un planeta en que las personas se unen y toman acción para generar un cambio perdurable en el mundo, sus comunidades y en sí mismos.",
+				"image": "rotary.webp",
+				"url": "https://rotarypuertobanus.es/",
+				"repo": "#",
+				"year": "2023",
+				"tecnologies": [
+					{ "category": "Wordpress", "clase": "danger" },
+					{ "category": "Elementor", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" }
+				],
+				"tags": ["rotary", "community", "friends", "leaders"]
+			},
+			{
+				"name": "Holiday Golf",
+				"description": "Holiday Golf es una empresa dedicada a la venta de productos de golf, con el objetivo de generar una fuente de ingresos para el sector de venta de productos de golf.",
+				"image": "holiday-golf.webp",
+				"url": "https://holidaygolf.com/",
+				"repo": "#",
+				"year": "2023",
+				"tecnologies": [
+					{ "category": "Wordpress", "clase": "danger" },
+					{ "category": "Elementor", "clase": "success" },
+					{ "category": "MariaDB", "clase": "warning" }
+				],
+				"tags": ["golf", "commerce", "products", "sales"]
 			}
 		]
 	}

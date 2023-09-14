@@ -1,0 +1,29 @@
+{
+	"name": "Videos y Cuestionarios",
+	"description": "Aplicación web que permite a los usuarios ver videos y resolver cuestionarios, para el entrenamiento y aprendizaje de los usuarios socios.",
+	"image": "cuestionarios.webp",
+	"url": "https://luisbardev-cuestionario.herokuapp.com/",
+	"repo": "https://github.com/luisb0992/cuentionarios",
+	"year": "2022",
+	"tecnologies": [
+		{ "category": "Laravel", "clase": "danger" },
+		{ "category": "Vue", "clase": "success" },
+		{ "category": "Javascript", "clase": "warning" }
+	],
+	"tags": ["Learning", "Social", "Videos", "Quizzes"]
+},
+{
+	"name": "App Control de Ventas de Servicios",
+	"description": "Aplicación web que permite llevar un control del sector de venta de servicios informáticos, tales como marketing, desarrollo, diseño, etc.",
+	"image": "app_ventas.webp",
+	"url": "http://app-ventas-3j.herokuapp.com/",
+	"repo": "https://github.com/luisb0992/app-ventas",
+	"year": "2022",
+	"tecnologies": [
+		{ "category": "Laravel", "clase": "danger" },
+		{ "category": "Vue", "clase": "success" },
+		{ "category": "Inertia", "clase": "warning" },
+		{ "category": "Javascript", "clase": "warning" }
+	],
+	"tags": ["Sales", "Services", "Marketing", "Development", "Design"]
+},

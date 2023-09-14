@@ -2,18 +2,7 @@
 	import { inject } from 'vue';
 	import useProject from './../composables/useProject';
 
-  const {
-    tecSelected,
-    technologies,
-    yearSelected,
-    years,
-    proyectsOrdered,
-    isThereFilter,
-    showMoreProjects,
-    filterForTechnologie,
-    filterForYear,
-    showMoreOrLessProjects,
-  } = useProject();
+	const { tecSelected, technologies, yearSelected, years, proyectsOrdered, isThereFilter, showMoreProjects, filterForTechnologie, filterForYear, showMoreOrLessProjects } = useProject();
 
 	const trans: any = inject('trans');
 </script>
@@ -87,8 +76,6 @@
 						<div class="p-4">
 							<img
 								class="h-40 rounded w-full object-cover object-center mb-6"
-								width="100%"
-								height="160px"
 								:src="`/assets/img/projects/${proyect.image}`"
 								:alt="proyect.name" />
 							<h2 class="text-xl text-gray-50 font-semibold mb-4">
