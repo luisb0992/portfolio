@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gdend {
+	background: radial-gradient(ellipse at center, #797ee199 0%, transparent 70%);
+	background-color: rgba(0, 0, 0, 0);
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-image: radial-gradient(rgba(121, 126, 225, 0.6) 0%, transparent 70%);
+	background-size: auto;
+	background-origin: padding-box;
+	background-clip: border-box;
+}

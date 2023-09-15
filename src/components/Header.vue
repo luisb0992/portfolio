@@ -32,29 +32,29 @@
 </script>
 
 <template>
-	<header class="bg-personal-gray-1 sticky top-0 z-[1]">
+	<header class="bg-personal-dark-gray-blue-1 sticky top-0 z-[1]">
 		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200">
 			<nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2 justify-center sm:justify-start gap-3 sm:gap-0">
 				<a
-					class="mr-5 hover:text-gray-300 transition-all duration-300"
+					class="mr-5 hover:text-sky-300 transition-all duration-300"
 					href="javascript:void(0)"
 					@click="toScroll('home')">
 					{{ trans('home') }}
 				</a>
 				<a
-					class="mr-5 hover:text-gray-300 transition-all duration-300"
+					class="mr-5 hover:text-sky-300 transition-all duration-300"
 					href="javascript:void(0)"
 					@click="toScroll('whoiam')">
 					{{ trans('whoiam') }}
 				</a>
 				<a
-					class="mr-5 hover:text-gray-300 transition-all duration-300"
+					class="mr-5 hover:text-sky-300 transition-all duration-300"
 					href="javascript:void(0)"
 					@click="toScroll('skills')">
 					{{ trans('skills') }}
 				</a>
 				<a
-					class="hover:text-gray-300 transition-all duration-300"
+					class="hover:text-sky-300 transition-all duration-300"
 					href="javascript:void(0)"
 					@click="toScroll('projects')">
 					{{ trans('projects') }}
@@ -71,41 +71,41 @@
 					:href="RRSS.linkedin"
 					target="_blank"
 					aria-label="Linkedin"
-					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					class="inline-flex items-center text-base bg-personal-dark-gray-blue-1 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-brands fa-linkedin-in" />
 				</a>
 				<a
 					:href="RRSS.github"
 					target="_blank"
 					aria-label="Github"
-					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					class="inline-flex items-center text-base bg-personal-dark-gray-blue-1 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-brands fa-github" />
 				</a>
 				<a
 					:href="'mailto:' + RRSS.emailOne"
 					target="_blank"
 					aria-label="Email"
-					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					class="inline-flex items-center text-base bg-personal-dark-gray-blue-1 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-solid fa-envelope" />
 				</a>
 				<a
 					:href="RRSS.whatsapp"
 					target="_blank"
 					aria-label="Whatsapp"
-					class="inline-flex items-center text-base bg-personal-gray-2 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
+					class="inline-flex items-center text-base bg-personal-dark-gray-blue-1 text-white hover:bg-gray-700 px-3 py-2 mt-4 md:mt-0 transition-all duration-300">
 					<font-awesome-icon icon="fa-brands fa-whatsapp" />
 				</a>
 				<div class="border-r mx-2 border-gray-600 mt-4 lg:mt-0">&nbsp;</div>
 				<button
-					class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 text-base mt-4 md:mt-0 transition-all duration-300"
-					:class="es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"
+					class="inline-flex items-center bg-personal-dark-gray-blue-1 border-0 py-1 px-3 text-base mt-4 md:mt-0 transition-all duration-300"
+					:class="es ? 'bg-gray-600 text-white hover:bg-gray-700' : 'hover:bg-gray-700'"
 					@click="changeLanguaje()"
 					:disabled="es">
 					<span> {{ trans('spanish') }} </span>
 				</button>
 				<button
-					class="inline-flex items-center bg-personal-gray-2 border-0 py-1 px-3 text-base mt-4 md:mt-0 transition-all duration-300"
-					:class="!es ? 'bg-gray-600 text-white hover:bg-gray-700' : ''"
+					class="inline-flex items-center bg-personal-dark-gray-blue-1 border-0 py-1 px-3 text-base mt-4 md:mt-0 transition-all duration-300"
+					:class="!es ? 'bg-gray-600 text-white hover:bg-gray-700' : 'hover:bg-gray-700'"
 					@click="changeLanguaje()"
 					:disabled="!es">
 					<span> {{ trans('english') }} </span>

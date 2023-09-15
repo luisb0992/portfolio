@@ -16,6 +16,10 @@ module.exports = {
 				'personal-gray-1': '#4733cc',
 				'personal-gray-2': '#533BED',
 				'personal-gray-3': '#261B6E',
+				'personal-dark-blue-1': '#161e2d',
+				'personal-light-blue-1': '#7dd2fc',
+				'personal-dark-gray-blue-1': '#1f2937',
+				'personal-dark-gray-blue-2': '#324259',
 			},
 			keyframes: {
 				'fade-in-down': {

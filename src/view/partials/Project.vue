@@ -8,10 +8,10 @@
 </script>
 
 <template>
-	<div class="bg-neutral-900 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div>
+	<!-- <div class="bg-neutral-900 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div> -->
 
 	<section
-		class="text-gray-600 bg-neutral-900"
+		class="text-gray-600 bg-personal-dark-blue-1"
 		id="projects">
 		<div class="container px-5 py-24 mx-auto">
 			<div class="flex flex-col text-center w-full mb-10">
@@ -28,7 +28,7 @@
 				<div class="flex flex-wrap flex-row items-center justify-center">
 					<div class="mb-3 mr-1">
 						<select
-							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-personal-gray-1 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-personal-gray-3 focus:outline-none"
+							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-gradient-to-r from-sky-700 to-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-personal-gray-1 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-personal-gray-3 focus:outline-none cursor-pointer"
 							@change="filterForTechnologie()"
 							v-model="tecSelected">
 							<option
@@ -46,7 +46,7 @@
 					</div>
 					<div class="mb-3">
 						<select
-							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-gray-600 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-gray-600 focus:outline-none"
+							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-gray-600 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-gray-600 focus:outline-none cursor-pointer"
 							@change="filterForYear()"
 							v-model="yearSelected">
 							<option
@@ -72,7 +72,7 @@
 					class="xl:w-1/4 md:w-1/2 p-2"
 					v-for="(proyect, index) in proyectsOrdered"
 					:key="index">
-					<div class="rounded-lg bg-personal-gray-2 shadow-2xl h-full flex flex-col justify-between animate-swing-in-top-fwd hover:bg-personal-gray-3 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
+					<div class="rounded-lg bg-personal-dark-gray-blue-1 shadow-2xl h-full flex flex-col justify-between animate-swing-in-top-fwd hover:bg-personal-dark-gray-blue-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
 						<div class="p-4">
 							<img
 								class="h-40 rounded w-full object-cover object-center mb-6"
@@ -87,7 +87,7 @@
 							</p>
 							<p class="flex flex-wrap my-4 gap-2">
 								<span
-									class="bg-personal-gray-1 text-gray-50 text-xs font-semibold mr-2 px-2.5 py-1 rounded"
+									class="bg-gradient-to-r from-sky-700 to-personal-gray-1 text-gray-50 text-xs font-semibold mr-2 px-2.5 py-1 rounded"
 									v-for="(tec, index2) in proyect.tecnologies"
 									:key="index2">
 									{{ tec.category }}
@@ -97,8 +97,11 @@
 						<div class="flex flex-row justify-between px-4 items-center">
 							<div class="py-4">
 								<a
-									:href="proyect.repo ?? '#'"
-									class="text-gray-100 inline-flex items-center text-base font-semibold hover:text-gray-300"
+									:href="proyect.repo == null || proyect.repo == '#' ? 'javascript:void(0)' : proyect.repo"
+									class="text-gray-100 inline-flex items-center text-base font-semibold hover:text-gray-400 transition duration-200 ease-in"
+									:class="{
+										'cursor-not-allowed': proyect.repo == null || proyect.repo == '#',
+									}"
 									target="_blank">
 									{{ trans('visitarRepo') }}
 									<svg
@@ -116,7 +119,7 @@
 							<div class="py-4">
 								<a
 									:href="proyect.url"
-									class="text-gray-100 inline-flex items-center text-base font-semibold hover:text-gray-300"
+									class="text-gray-100 inline-flex items-center text-base font-semibold hover:text-gray-400 transition duration-200 ease-in"
 									target="_blank">
 									<p>
 										{{ trans('visitarSitio') }}
@@ -146,7 +149,7 @@
 				class="flex justify-center items-center py-6"
 				v-if="isThereFilter">
 				<button
-					class="text-base font-light text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-3 px-4 py-3 rounded transition-all duration-200 ease-in"
+					class="text-base font-light text-gray-200 px-5 py-3 rounded-3xl bg-gradient-to-r from-sky-700 to-personal-gray-1 hover:bg-gradient-to-r hover:from-sky-800 hover:to-personal-gray-1 transition duration-200 ease-in"
 					@click="showMoreOrLessProjects()">
 					<span v-if="showMoreProjects"> {{ trans('showMore') }} </span>
 					<span v-else> {{ trans('showLess') }} </span>

@@ -6,9 +6,9 @@
 
 <template>
 	<section
-		class="bg-gradient-to-t from-personal-brown-1 to-[#2b262a]"
+		class="bg-personal-dark-blue-1"
 		id="skills">
-		<div class="container px-5 py-24 mx-auto">
+		<div class="container px-5 pb-24 mx-auto">
 			<!-- header -->
 			<div class="flex flex-col text-center w-full mb-10">
 				<p class="text-sm text-gray-300 tracking-widest font-semibold mb-1">
@@ -24,9 +24,9 @@
 			<div class="flex flex-wrap">
 				<!-- frontend -->
 				<div class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
-					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-dark-gray-blue-1 shadow-2xl">
 						<div class="flex items-center mb-3 -ml-3">
-							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-personal-gray-3 text-white flex-shrink-0">
+							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 from-10% to-personal-gray-1 to-90% text-white flex-shrink-0">
 								<font-awesome-icon icon="fa-solid fa-code" />
 							</div>
 							<h3 class="text-gray-50 text-lg font-semibold">
@@ -122,9 +122,9 @@
 
 				<!-- backend -->
 				<div class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
-					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-dark-gray-blue-1 shadow-2xl">
 						<div class="flex items-center mb-3 -ml-3">
-							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-personal-gray-3 text-white flex-shrink-0 font-extrabold">
+							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 from-10% to-personal-gray-1 to-90% text-white flex-shrink-0 font-extrabold">
 								<font-awesome-icon icon="fa-solid fa-cube" />
 							</div>
 							<h2 class="text-gray-50 text-lg font-semibold">
@@ -228,9 +228,9 @@
 
 				<!-- Base de datos -->
 				<div class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
-					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-dark-gray-blue-1 shadow-2xl">
 						<div class="flex items-center mb-3 -ml-3">
-							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-personal-gray-3 text-white flex-shrink-0">
+							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 from-10% to-personal-gray-1 to-90% text-white flex-shrink-0">
 								<font-awesome-icon icon="fa-solid fa-database" />
 							</div>
 							<h2 class="text-gray-50 text-lg font-semibold">
@@ -334,9 +334,9 @@
 
 				<!-- herramientas -->
 				<div class="p-4 lg:w-1/4 md:w-1/2 sm:w-1/2 w-full transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
-					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-brown-1 shadow-2xl">
+					<div class="flex rounded-lg h-full p-8 flex-col bg-personal-dark-gray-blue-1 shadow-2xl">
 						<div class="flex items-center mb-3 -ml-3">
-							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-personal-gray-3 text-white flex-shrink-0">
+							<div class="w-12 h-12 mr-3 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 from-10% to-personal-gray-1 to-90% text-white flex-shrink-0">
 								<font-awesome-icon icon="fa-solid fa-screwdriver-wrench" />
 							</div>
 							<h2 class="text-gray-50 text-lg font-semibold">

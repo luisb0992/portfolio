@@ -7,9 +7,9 @@ const RRSS: any = inject("RRSS");
 </script>
 
 <template>
-  <div class="bg-personal-brown-2 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div>
+  <!-- <div class="bg-personal-brown-2 py-12 w-24 rounded-full absolute inset-x-0 -mt-10 mx-auto"></div> -->
   <footer>
-    <div class="text-gray-200 bg-personal-brown-2 py-14">
+    <div class="text-gray-200 bg-personal-dark-gray-blue-1 py-14">
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex font-medium items-center md:justify-start justify-center">
           <Logo
@@ -28,7 +28,7 @@ const RRSS: any = inject("RRSS");
             :href="RRSS.facebook"
             target="_blank"
             aria-label="Facebook"
-            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-dark-gray-blue-1 hover:bg-gray-700 transition duration-200 ease-in px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
               class="w-4 h-4"
@@ -50,7 +50,7 @@ const RRSS: any = inject("RRSS");
             :href="RRSS.twitter"
             target="_blank"
             aria-label="Twitter"
-            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-dark-gray-blue-1 hover:bg-gray-700 transition duration-200 ease-in px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
               class="w-4 h-4"
@@ -72,7 +72,7 @@ const RRSS: any = inject("RRSS");
             :href="RRSS.instagram"
             target="_blank"
             aria-label="Instagram"
-            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-dark-gray-blue-1 hover:bg-gray-700 transition duration-200 ease-in px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ const RRSS: any = inject("RRSS");
             :href="RRSS.github"
             target="_blank"
             aria-label="Github"
-            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-dark-gray-blue-1 hover:bg-gray-700 transition duration-200 ease-in px-3 py-2.5 mt-4 md:mt-0"
           >
             <svg
               class="w-4 h-4"
@@ -112,7 +112,7 @@ const RRSS: any = inject("RRSS");
             :href="RRSS.linkedin"
             target="_blank"
             aria-label="Linkedin"
-            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-gray-1 hover:bg-personal-gray-2 px-3 py-2.5 mt-4 md:mt-0"
+            class="inline-flex items-center focus:outline-none text-base text-gray-200 bg-personal-dark-gray-blue-1 hover:bg-gray-700 transition duration-200 ease-in px-3 py-2.5 mt-4 md:mt-0"
           >
             <font-awesome-icon icon="fa-brands fa-linkedin-in" />
           </a>
