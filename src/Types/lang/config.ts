@@ -3,5 +3,5 @@ export type Trans = {
 };
 
 export type Lang = {
-	lang: string;
+	lang: string | boolean | undefined;
 };
