@@ -107,9 +107,7 @@
 									<span class="bg-gray-100 text-personal-gray-1 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">
 										<font-awesome-icon icon="fas fa-check text-xs" />
 									</span>
-									<span>{{ trans('bootstrap') }}</span
-									>, <span>{{ trans('tailwind') }}</span
-									>, <span>{{ trans('materialize') }}</span>
+									<span>{{ trans('tailwind') }}</span>
 								</a>
 								<a class="inline-flex justify-center">
 									<span class="bg-gray-100 text-personal-gray-1 w-6 h-6 mr-2 rounded-full inline-flex items-center justify-center">

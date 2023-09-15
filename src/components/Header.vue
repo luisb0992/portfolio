@@ -34,7 +34,7 @@
 <template>
 	<header class="bg-personal-gray-1 sticky top-0 z-[1]">
 		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200">
-			<nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2">
+			<nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2 justify-center sm:justify-start gap-3 sm:gap-0">
 				<a
 					class="mr-5 hover:text-gray-300 transition-all duration-300"
 					href="javascript:void(0)"
