@@ -13,13 +13,13 @@ const RRSS: any = inject("RRSS");
       <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex font-medium items-center md:justify-start justify-center">
           <Logo
-            classes="w-20 h-20 bg-gray-200 rounded-full pr-1"
+            classes="w-16 h-16 bg-gray-200 rounded-full pr-1 aspect-square"
             src="/assets/img/isotipo-luisandev.webp"
           />
         </a>
         <p class="text-base sm:ml-4 sm:mt-0 mt-4">
           {{ year }} —
-          <a :href="RRSS.linkedin" rel="noopener noreferrer" class="ml-1" target="_blank" aria-label="Linkedin">
+          <a :href="RRSS.linkedin" rel="noopener noreferrer" class="ml-1" target="_blank" aria-label="Linkedin Account">
             @luisandev
           </a>
         </p>

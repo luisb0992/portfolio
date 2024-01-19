@@ -62,7 +62,7 @@
 			</nav>
 			<a class="hidden sm:flex order-first lg:order-none lg:w-1/5 font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
 				<Logo
-					classes="w-12 h-12 bg-gray-200 rounded-full pr-1"
+					classes="w-12 h-12 bg-gray-200 rounded-full pr-1 aspect-square"
 					src="/assets/img/isotipo-luisandev.webp" />
 			</a>
 

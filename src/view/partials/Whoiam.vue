@@ -31,15 +31,15 @@
 						<a
 							:href="links.cv"
 							target="_blank"
-							aria-label="Personal CV"
-							class="px-5 py-3 rounded transition-all duration-300 inline-flex items-center focus:outline-none text-lg font-medium text-gray-200 bg-sky-600 hover:bg-sky-700 gap-2 justify-center">
+							aria-label="Download currículum vitae"
+							class="px-5 py-3 rounded transition-all duration-300 inline-flex items-center focus:outline-none font-semibold text-gray-100 text-lg bg-sky-600 hover:bg-sky-700 gap-2 justify-center">
 							<font-awesome-icon icon="fa-solid fa-file-lines" />
 							{{ trans('downloadCV') }}
 						</a>
 						<a
 							:href="RRSS.linkedin"
 							target="_blank"
-							aria-label="Linkedin"
+							aria-label="Linkedin Account"
 							class="px-5 py-3 rounded transition-all duration-300 inline-flex items-center focus:outline-none text-lg font-medium text-gray-200 bg-personal-dark-gray-blue-1 shadow-2xl hover:bg-gray-700 gap-2 justify-center">
 							<font-awesome-icon icon="fa-brands fa-linkedin-in" />
 							Linkedin
@@ -47,7 +47,7 @@
 						<a
 							:href="RRSS.github"
 							target="_blank"
-							aria-label="Linkedin"
+							aria-label="Github Account"
 							class="px-5 py-3 rounded transition-all duration-300 inline-flex items-center focus:outline-none text-lg font-medium text-gray-200 bg-personal-dark-gray-blue-1 shadow-2xl hover:bg-gray-700 gap-2 justify-center">
 							<font-awesome-icon icon="fa-brands fa-github" />
 							GitHub

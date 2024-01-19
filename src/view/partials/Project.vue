@@ -18,7 +18,7 @@
 				<p class="text-sm text-gray-200 tracking-widest font-semibold mb-1">
 					{{ trans('allProjects') }}
 				</p>
-				<h3 class="text-4xl font-medium text-gray-100">
+				<h3 class="text-4xl font-medium text-gray-200">
 					{{ trans('projects') }}
 				</h3>
 			</div>
@@ -30,7 +30,8 @@
 						<select
 							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-gradient-to-r from-sky-700 to-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-personal-gray-1 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-personal-gray-3 focus:outline-none cursor-pointer"
 							@change="filterForTechnologie()"
-							v-model="tecSelected">
+							v-model="tecSelected"
+							aria-label="Technologies">
 							<option
 								value="0"
 								selected>
@@ -48,7 +49,8 @@
 						<select
 							class="appearance-none block w-auto px-3 py-1.5 text-base font-normal text-gray-200 bg-personal-gray-1 bg-clip-padding bg-no-repeat border-2 border-solid border-gray-600 rounded transition ease-in-out m-0 focus:text-gray-200 focus:bg-personal-gray-1 focus:border-gray-600 focus:outline-none cursor-pointer"
 							@change="filterForYear()"
-							v-model="yearSelected">
+							v-model="yearSelected"
+							aria-label="Year">
 							<option
 								value="0"
 								selected>
@@ -149,7 +151,7 @@
 				class="flex justify-center items-center py-6"
 				v-if="isThereFilter">
 				<button
-					class="text-lg font-medium text-gray-200 px-5 py-3 rounded bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in"
+					class="text-lg font-semibold text-gray-100 px-5 py-3 rounded bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in"
 					@click="showMoreOrLessProjects()">
 					<span v-if="showMoreProjects"> {{ trans('showMore') }} </span>
 					<span v-else> {{ trans('showLess') }} </span>
