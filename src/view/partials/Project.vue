@@ -67,12 +67,12 @@
 			<!-- /filtros de búsqueda -->
 
 			<!-- cards - proyectos -->
-			<div class="flex flex-wrap items-stretch transition ease-in-out delay-150">
+			<div class="grid grid-cols-1 md:grid-cols-4 gap-4 transition ease-in-out delay-150">
 				<div
-					class="xl:w-1/4 md:w-1/2 p-2"
+					class="grid gap-4"
 					v-for="(proyect, index) in proyectsOrdered"
 					:key="index">
-					<div class="rounded-lg bg-personal-dark-gray-blue-1 shadow-2xl h-full flex flex-col justify-between animate-swing-in-top-fwd hover:bg-personal-dark-gray-blue-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-500">
+					<div class="h-auto max-w-full rounded-lg bg-personal-dark-gray-blue-1 shadow-2xl flex flex-col justify-between animate-swing-in-top-fwd hover:bg-personal-dark-gray-blue-2 transition ease-in-out duration-300">
 						<div class="p-4">
 							<img
 								class="h-40 rounded w-full object-cover object-center mb-6"
@@ -149,7 +149,7 @@
 				class="flex justify-center items-center py-6"
 				v-if="isThereFilter">
 				<button
-					class="text-base font-light text-gray-200 px-5 py-3 rounded-3xl bg-gradient-to-r from-sky-700 to-personal-gray-1 hover:bg-gradient-to-r hover:from-sky-800 hover:to-personal-gray-1 transition duration-200 ease-in"
+					class="text-lg font-medium text-gray-200 px-5 py-3 rounded bg-sky-600 hover:bg-sky-700 transition duration-300 ease-in"
 					@click="showMoreOrLessProjects()">
 					<span v-if="showMoreProjects"> {{ trans('showMore') }} </span>
 					<span v-else> {{ trans('showLess') }} </span>

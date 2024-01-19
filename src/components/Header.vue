@@ -32,7 +32,7 @@
 </script>
 
 <template>
-	<header class="bg-personal-dark-gray-blue-1 sticky top-0 z-[1]">
+	<header class="bg-personal-dark-blue-1 sticky top-0 z-[1]">
 		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-gray-200">
 			<nav class="flex lg:w-2/5 flex-wrap items-center text-sm sm:text-base md:ml-auto py-2 justify-center sm:justify-start gap-3 sm:gap-0">
 				<a
@@ -50,19 +50,19 @@
 				<a
 					class="mr-5 hover:text-sky-300 transition-all duration-300"
 					href="javascript:void(0)"
-					@click="toScroll('skills')">
-					{{ trans('skills') }}
+					@click="toScroll('projects')">
+					{{ trans('projects') }}
 				</a>
 				<a
 					class="hover:text-sky-300 transition-all duration-300"
 					href="javascript:void(0)"
-					@click="toScroll('projects')">
-					{{ trans('projects') }}
+					@click="toScroll('skills')">
+					{{ trans('skills') }}
 				</a>
 			</nav>
-			<a class="flex order-first lg:order-none lg:w-1/5 font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+			<a class="hidden sm:flex order-first lg:order-none lg:w-1/5 font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
 				<Logo
-					classes="w-16 h-16 bg-gray-200 rounded-full pr-1"
+					classes="w-12 h-12 bg-gray-200 rounded-full pr-1"
 					src="/assets/img/isotipo-luisandev.webp" />
 			</a>
 

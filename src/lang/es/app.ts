@@ -9,7 +9,7 @@ const data: {} = {
 	contact: 'Contacto',
 	about: 'Acerca de',
 	iamdeveloper: 'Ingeniero en Informática | Desarrollador de Software | Fullstack Web Developer',
-	aboutMe: 'Ingeniero, programador fullstack Laravel/VueJs, autodidacta, líder de equipos y gerente de proyecto con mas de 7 años de experiencia. He dedicado parte de mi vida a dar soluciones a problemas informáticos con herramientas factibles y escalables.',
+	aboutMe: 'Un gusto saludarte! me llamo Luis y soy desarrollador web desde hace 7 años. He colaborado en distintos proyectos de gran impacto como myeart.org, fikrea.com, thestartup-community.com, bahiamotors.com, entre muchos otros. Busco siempre la perfección acompañada de una buena actitud en cada uno de mis trabajos. Un buen profesional nunca deja de aprender!',
 	phrase: '“La programación es una carrera de obstáculos. El arte de programar es el arte de organizar y dominar la complejidad.”',
 	home: 'Inicio',
 	skills: 'Habilidades',

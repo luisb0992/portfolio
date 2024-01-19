@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+	/* font-family: 'Abel', sans-serif; */
+	/* font-family: 'Dancing Script', cursive; */
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+
 
 .gdend {
 	background: radial-gradient(ellipse at center, #797ee199 0%, transparent 70%);
