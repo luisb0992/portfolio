@@ -1,27 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
-
-* {
-	/* font-family: 'Abel', sans-serif; */
-	/* font-family: 'Dancing Script', cursive; */
-	font-family: 'Space Grotesk', sans-serif;
-}
-
-
 
 .gdend {
-	background: radial-gradient(ellipse at center, #797ee199 0%, transparent 70%);
-	background-color: rgba(0, 0, 0, 0);
-	background-position-x: 0%;
-	background-position-y: 0%;
-	background-repeat: repeat;
-	background-attachment: scroll;
-	background-image: radial-gradient(rgba(121, 126, 225, 0.6) 0%, transparent 70%);
-	background-size: auto;
-	background-origin: padding-box;
-	background-clip: border-box;
+  background: radial-gradient(ellipse at center, #797ee199 0%, transparent 70%);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: radial-gradient(
+    rgba(121, 126, 225, 0.6) 0%,
+    transparent 70%
+  );
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
 }
