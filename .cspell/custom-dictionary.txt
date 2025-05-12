@@ -68,6 +68,7 @@ Cuestionarios
 cursos
 dedicada
 dedicadas
+deportivos
 desarrollar
 desarrollo
 diaria
@@ -187,6 +188,7 @@ registrarse
 reportes
 representamos
 respaldo
+ropa
 RRHH
 rusa
 Rusa
@@ -208,6 +210,7 @@ tareas
 tarifas
 tecnología
 tecnológicos
+tela
 Tienda
 tiendacv
 toman

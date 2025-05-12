@@ -373,7 +373,7 @@
         ],
         "tags": ["lawyer", "clinic", "lead", "gestion"]
       },
-	  {
+      {
         "name": "Townshend",
         "description": "Townshend, A law firm dedicated to managing cases between clients and carriers.",
         "image": "townshend.webp",
@@ -386,6 +386,20 @@
           { "category": "MariaDB", "clase": "warning" }
         ],
         "tags": ["lawyer", "auto", "lead", "gestion"]
+      },
+      {
+        "name": "702-sport",
+        "description": "702-sport is a company dedicated to the sale of sports clothing, with the aim of generating a source of income for the sports clothing sales sector.",
+        "image": "702-sport.webp",
+        "url": "https://planillacostureria.702-sport.com/",
+        "repo": "#",
+        "year": "2024",
+        "tecnologies": [
+          { "category": "Laravel", "clase": "danger" },
+          { "category": "Vue", "clase": "success" },
+          { "category": "MariaDB", "clase": "warning" }
+        ],
+        "tags": ["sport", "ropa", "tela", "gestion"]
       }
     ]
   }
