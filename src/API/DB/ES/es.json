@@ -400,6 +400,34 @@
           { "category": "MariaDB", "clase": "warning" }
         ],
         "tags": ["sport", "ropa", "tela", "gestion"]
+      },
+      {
+        "name": "Prime Home Fix LLC",
+        "description": "Expertos en limpieza y mantenimiento del hogar altamente calificados. Ofrecemos servicios confiables del hogar en Chicago.",
+        "image": "prime-home-fix.webp",
+        "url": "https://primehomefixllc.com/",
+        "repo": "#",
+        "year": "2025",
+        "tecnologies": [
+          { "category": "Wordpress", "clase": "primary" },
+          { "category": "Elementor", "clase": "success" },
+          { "category": "MariaDB", "clase": "warning" }
+        ],
+        "tags": ["cleaning", "experts", "gutter", "services"]
+      },
+      {
+        "name": "Awore CL",
+        "description": "Somos una marca chilena especializada en la fabricación de muebles y decoración a medida, con la misión de ayudarte a transformar tu hogar.",
+        "image": "awore.webp",
+        "url": "https://awore.cl/",
+        "repo": "#",
+        "year": "2024",
+        "tecnologies": [
+          { "category": "Wordpress", "clase": "primary" },
+          { "category": "Elementor", "clase": "success" },
+          { "category": "MariaDB", "clase": "warning" }
+        ],
+        "tags": ["decoracion", "muebles", "servicios", "hogar"]
       }
     ]
   }
