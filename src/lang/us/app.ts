@@ -9,7 +9,7 @@ const data: {} = {
 	iamdeveloper: 'Computer Engineer | Software Developer | Complete web developer',
 	contact: 'Contact',
 	about: 'About',
-	aboutMe: 'Engineer, fullstack Laravel/VueJs programmer, self-taught, team leader and project manager with more than 7 years of experience. I have dedicated part of my life to providing solutions to computer problems with feasible and scalable tools.',
+	aboutMe: 'Computer Science Engineer with over 9 years of experience as a Full Stack Web Developer. Specialized in the design, development, and implementation of robust and scalable applications, including CRMs, eCommerce platforms and marketplaces, eLearning systems, streaming and social media, as well as solutions with digital signatures, blogs, and optimized landing pages.',
 	phrase: '“Programming is an obstacle course. The art of programming is the art of organizing and mastering complexity.”',
 	home: 'Home',
 	skills: 'Skills',

@@ -9,7 +9,7 @@ const data: {} = {
 	contact: 'Contacto',
 	about: 'Acerca de',
 	iamdeveloper: 'Ingeniero en Informática | Desarrollador de Software | Fullstack Web Developer',
-	aboutMe: 'Desarrollador desde hace 9 años. Colaborando en distintos proyectos de gran impacto como myeart.org, fikrea.com, thestartup-community.com, bahiamotors.com, entre muchos otros. Busco siempre la perfección acompañada de una buena actitud en cada uno de mis trabajos. Un buen profesional nunca deja de aprender!',
+	aboutMe: 'Ingeniero en Informática con más de 9 años de experiencia como Desarrollador Web Full Stack. Especializado en el diseño, desarrollo e implementación de aplicaciones robustas y escalables, incluyendo CRM, plataformas eCommerce y marketplaces, sistemas eLearning, streaming y redes sociales, ademas de soluciones con firmas digitales, blogs y landing pages optimizadas para SEO.',
 	phrase: '“La programación es una carrera de obstáculos. El arte de programar es el arte de organizar y dominar la complejidad.”',
 	home: 'Inicio',
 	skills: 'Habilidades',
